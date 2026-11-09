@@ -70,6 +70,8 @@ cause, reproduction, addresses, assembly and tests.
 
 Read [testing](docs/testing.md), [the complete bug catalogue](docs/bugs.md),
 [history](docs/history.md) and [machine-readable evidence](evidence/summary.json).
+A [direct comparison with freshly compiled wpclp 1.4](evidence/led-equivalence.json)
+confirmed identical LED-only output and zero differences in KH5's lamp-driver region.
 The large historical campaign ran on the private G6 predecessor. KH5 changes its
 numeric guard implementation and branding; **historical G6 runs are not counted
 as executions of KH5**. The release metadata and summary distinguish those runs

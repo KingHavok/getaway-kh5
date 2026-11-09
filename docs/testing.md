@@ -10,6 +10,7 @@ See `evidence/summary.json` for completed counts and current release status.
 | Group | What is checked |
 |---|---|
 | Conversion | Exact baseline identity, minimal IPS, annotated-source reconstruction, output identity, stored/native checksum, every changed offset |
+| LED equivalence | Fresh pinned wpclp 1.4 on official L5: whole LED-only image identical with matched reference metadata; KH5 driver region 139/139 bytes identical; [evidence](../evidence/led-equivalence.json) |
 | Native boot | Actual WPC sum loop reaches its zero-difference success branch; private display observation reads REV. KH5 |
 | Native guard | 48 isolated 6809 cases: 4 qualification counts × 4 live counts × absent/F2/F3 task state; D and caller/continuation stack checked |
 | A1/A3 | Lock/jackpot/super sequences; native entry counters reject repeated starts, preserve running Redline |

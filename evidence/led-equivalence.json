@@ -1,0 +1,52 @@
+{
+  "result": "PASS",
+  "baseline": {
+    "bytes": 524288,
+    "crc32": "b97f3d62",
+    "sha1": "c87c36a2327561c50b37d587d3bd0782acf8860d",
+    "sha256": "c9015339fb0312eb84a580cc4f32de41b70c78931fad2cda515a28c6d4d0f0ac",
+    "wpc_checksum": "4905"
+  },
+  "kh5": {
+    "bytes": 524288,
+    "crc32": "b9ba49b9",
+    "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+    "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+    "wpc_checksum": "0F05"
+  },
+  "wpclp_version": "1.4",
+  "wpclp_options": "default delay; no -e; reference label T-1",
+  "wpclp_executable_sha256": "42aea77ac55e854159bf83b7a45e62f6b25fe760f4dc216edb6ded6fe098f781",
+  "reference_image": {
+    "bytes": 524288,
+    "crc32": "244d3f2c",
+    "sha1": "a3551326dca74eada1e649ea8e2b22ad3c7103c9",
+    "sha256": "fd22cb28e6bc9edbfc5c67c8f119f44d8b5b845b4c322e5216b9d1de14cbea50",
+    "wpc_checksum": "4C01"
+  },
+  "whole_led_only_image_identical": true,
+  "kh5_lamp_driver_identical": true,
+  "lamp_driver_comparison": {
+    "start_inclusive": "7DCF5",
+    "end_exclusive": "7DD80",
+    "bytes": 139,
+    "differing_bytes": 0,
+    "sha256": "861d3e13f7f99f2253ea3c5ce466fe5409f00f7e164e106a686b7221183f8ee4"
+  },
+  "led_changed_bytes": 67,
+  "input_unchanged": true,
+  "scope": "Byte equivalence to wpclp default V2; no physical LED test",
+  "date": "2026-11-09",
+  "reference_build": {
+    "source": "https://github.com/Pwedge/wpclp",
+    "commit": "b0dcc64845847ebbdf8f5c39733dce7869ab13d4",
+    "freshly_compiled": true,
+    "compiler_command": "cc -Wall -I. wpc_lamp_patcher.c wpc_rom.c wpc_lampmatrix_patch.c -o WPCGhost",
+    "source_sha256": {
+      "wpc_lamp_patcher.c": "1c5cae2fd0eda7d54d753e106ede992c8f5c27ae636726678b66c063f03d9ac2",
+      "wpc_lamp_patcher.h": "b61340ceb65f5a5c16b92d31358a5705e4938e80b88d793bd1adb368c854d47c",
+      "wpc_lampmatrix_patch.c": "152ddda5458057f8d4bade0265443d8f62a067ca7dee6d91944ab146568bbc0f",
+      "wpc_rom.c": "2059008c5c42dabaa04e3e840ee5776280f7d1ed41328239c54f1eda0ae8bd2a"
+    }
+  }
+}

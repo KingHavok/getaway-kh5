@@ -38,3 +38,29 @@ ROM identity, native checksum and matrix/controller regressions were checked.
 Actual ghosting depends on real LEDs, wiring and drivers, so physical LED behavior
 remains a hardware check. The LED change itself does not modify DMD artwork/code;
 this project separately changes the red-light effect pointer and revision label.
+
+## Direct upstream byte-equivalence check
+
+On 9 November 2026, wpclp 1.4 was freshly compiled from the pinned upstream
+commit and run on untouched, hash-verified official L5. Its default V2 patch
+(no `-e`) changed 67 lamp-driver bytes. The check established:
+
+- The Python LED-only conversion and wpclp output were identical across **all
+  524288 bytes** when both used the same reference label `T-1` and checksum.
+- The actual qualified KH5 image matched wpclp across file `7DCF5..7DD7F`
+  (**139 bytes; zero differences**), including unchanged surrounding bytes.
+- The original L5 input stayed unchanged. KH5's release hash stayed unchanged.
+
+The reference label affects only revision/checksum metadata. It is not a new
+KH5 build. [Numeric evidence](../../evidence/led-equivalence.json) records source,
+executable and image hashes without distributing any ROM payload. To reproduce
+with your own authorized L5 and a locally compiled pinned wpclp executable:
+
+```sh
+python3 tools/verify_led.py --baseline /private/path/GETAW_L5.ROM \
+  --wpclp /private/path/WPCGhost --output /private/path/led-comparison
+```
+
+The output directory must be new. Its reference image and raw tool log stay
+private. This proves equivalence to wpclp's default V2 transformation; physical
+LED performance still requires the machine.

@@ -485,5 +485,16 @@
     "B6 temporary hold closed as inferred expected behavior",
     "No physical current, heat, ramp-clearance, LED or audible-sound validation",
     "Raw evidence stays private because it can contain proprietary data"
-  ]
+  ],
+  "led_wpclp_direct_comparison": {
+    "result": "PASS",
+    "reference": "wpclp 1.4 freshly built from pinned upstream",
+    "whole_led_only_image_identical": true,
+    "kh5_lamp_driver_identical": true,
+    "compared_driver_bytes": 139,
+    "differing_bytes": 0,
+    "led_changed_bytes": 67,
+    "record": "led-equivalence.json",
+    "kh5_unchanged": true
+  }
 }
