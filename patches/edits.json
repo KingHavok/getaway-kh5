@@ -1,0 +1,64 @@
+{
+  "edits": [
+    {
+      "id": "MULTIBALL-HOOK",
+      "offset": "2A091",
+      "after": "7E6FD00000",
+      "reason": "B3: reject ordinary-multiball entry while Redline task F2 is pending, then use KH5's original-source numeric guard at 2A:6F98; retains two original padding bytes"
+    },
+    {
+      "id": "BURN-RUBBER-ZERO",
+      "offset": "7621A",
+      "after": "00",
+      "reason": "Retain the zero-minimum adjustment option identified in L-5C: allow zero as the minimum for A.2 13 MULTIBALL PERCNT, enabling removal of multiball from Burn Rubber awards"
+    },
+    {
+      "id": "RED-LIGHT-EFFECT",
+      "offset": "76A37",
+      "after": "537A",
+      "reason": "Restore Run the Red Light by pointing standard multiball intro effect $36 at the surviving native L-5 text/sound routine $2B:537A, retaining effect $36 priority, flags and lifecycle"
+    },
+    {
+      "id": "START-EDGE",
+      "offset": "7516E",
+      "after": "78",
+      "reason": "F1: in switch-handler table entry $0B (Start), replace open-edge bit $80 with close-edge bit $40, preserving phase eligibility bits $38; invoke native Start on press so its SLOW hold loop can run before release"
+    },
+    {
+      "id": "REDLINE-SAVER",
+      "offset": "299FC",
+      "after": "F2",
+      "reason": "A9: replace duplicate E2 saver-task test in $2A:59EA with pending Redline task F2; saver/drain callback returns the ball during the intro. Native $6ADF renames F2 to F3 after initialization, so this adds no permanent mode saver."
+    },
+    {
+      "id": "SECRET-HOOK",
+      "offset": "296C6",
+      "after": "7E70001212",
+      "reason": "C2 repeated prep: redirect native Secret Mania prologue to a register-preserving active-task guard; retain full native mode and nine-light challenge"
+    },
+    {
+      "id": "SECRET-TILT-GAME",
+      "offset": "5AAD7",
+      "after": "0138",
+      "reason": "C2 tilt: correct Secret Mania cleanup predicate at 36:6AD4 to check native Secret Mania task 0138 rather than unrelated task 00B7"
+    },
+    {
+      "id": "SECRET-TILT-RESULT",
+      "offset": "5AADE",
+      "after": "0139",
+      "reason": "C2 tilt: correct second Secret Mania cleanup predicate to check result task 0139 rather than unrelated task 00B8; invokes existing 2A:5776 cleanup before tilt kills gameplay tasks"
+    },
+    {
+      "id": "PWM-STOP-HOOK",
+      "offset": "2ACC8",
+      "after": "BD70401212",
+      "reason": "PWM cancellation: call atomic stop hook at 2A:7040 rather than only clearing the E6/E7 timer; prevent residual high-power diverter latch after cancellation during a PWM on slice"
+    },
+    {
+      "id": "BRANDING",
+      "offset": "70D5C",
+      "after": "4b48",
+      "reason": "Replace revision letter and hyphen with two initials. Native numeric suffix comes from checksum low byte 05; renders KH5 in the same string allocation."
+    }
+  ]
+}

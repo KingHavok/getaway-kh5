@@ -1,0 +1,282 @@
+[
+  {
+    "file_offset": "2AF98",
+    "bank": "2A",
+    "cpu_address": "6F98",
+    "instruction": "PSHS D",
+    "encoding": "3406"
+  },
+  {
+    "file_offset": "2AF9A",
+    "bank": "2A",
+    "cpu_address": "6F9A",
+    "instruction": "LDA $0805",
+    "encoding": "b60805"
+  },
+  {
+    "file_offset": "2AF9D",
+    "bank": "2A",
+    "cpu_address": "6F9D",
+    "instruction": "BEQ numeric_reject",
+    "encoding": "2710"
+  },
+  {
+    "file_offset": "2AF9F",
+    "bank": "2A",
+    "cpu_address": "6F9F",
+    "instruction": "LDA $0806",
+    "encoding": "b60806"
+  },
+  {
+    "file_offset": "2AFA2",
+    "bank": "2A",
+    "cpu_address": "6FA2",
+    "instruction": "DECA ",
+    "encoding": "4a"
+  },
+  {
+    "file_offset": "2AFA3",
+    "bank": "2A",
+    "cpu_address": "6FA3",
+    "instruction": "BNE numeric_reject",
+    "encoding": "260a"
+  },
+  {
+    "file_offset": "2AFA5",
+    "bank": "2A",
+    "cpu_address": "6FA5",
+    "instruction": "PULS D",
+    "encoding": "3506"
+  },
+  {
+    "file_offset": "2AFA7",
+    "bank": "2A",
+    "cpu_address": "6FA7",
+    "instruction": "PSHS D",
+    "encoding": "3406"
+  },
+  {
+    "file_offset": "2AFA9",
+    "bank": "2A",
+    "cpu_address": "6FA9",
+    "instruction": "JSR $6EC6",
+    "encoding": "bd6ec6"
+  },
+  {
+    "file_offset": "2AFAC",
+    "bank": "2A",
+    "cpu_address": "6FAC",
+    "instruction": "JMP $6096",
+    "encoding": "7e6096"
+  },
+  {
+    "file_offset": "2AFAF",
+    "bank": "2A",
+    "cpu_address": "6FAF",
+    "instruction": "PULS D,PC",
+    "encoding": "3586"
+  },
+  {
+    "file_offset": "2AFD0",
+    "bank": "2A",
+    "cpu_address": "6FD0",
+    "instruction": "PSHS D",
+    "encoding": "3406"
+  },
+  {
+    "file_offset": "2AFD2",
+    "bank": "2A",
+    "cpu_address": "6FD2",
+    "instruction": "JSR $86BF",
+    "encoding": "bd86bf"
+  },
+  {
+    "file_offset": "2AFD5",
+    "bank": "2A",
+    "cpu_address": "6FD5",
+    "instruction": ".WORD $00F2",
+    "encoding": "00f2"
+  },
+  {
+    "file_offset": "2AFD7",
+    "bank": "2A",
+    "cpu_address": "6FD7",
+    "instruction": "BCC pending_reject",
+    "encoding": "2405"
+  },
+  {
+    "file_offset": "2AFD9",
+    "bank": "2A",
+    "cpu_address": "6FD9",
+    "instruction": "PULS D",
+    "encoding": "3506"
+  },
+  {
+    "file_offset": "2AFDB",
+    "bank": "2A",
+    "cpu_address": "6FDB",
+    "instruction": "JMP $6F98",
+    "encoding": "7e6f98"
+  },
+  {
+    "file_offset": "2AFDE",
+    "bank": "2A",
+    "cpu_address": "6FDE",
+    "instruction": "PULS D",
+    "encoding": "3506"
+  },
+  {
+    "file_offset": "2AFE0",
+    "bank": "2A",
+    "cpu_address": "6FE0",
+    "instruction": "RTS ",
+    "encoding": "39"
+  },
+  {
+    "file_offset": "2B000",
+    "bank": "2A",
+    "cpu_address": "7000",
+    "instruction": "PSHS D,X",
+    "encoding": "3416"
+  },
+  {
+    "file_offset": "2B002",
+    "bank": "2A",
+    "cpu_address": "7002",
+    "instruction": "JSR $86BF",
+    "encoding": "bd86bf"
+  },
+  {
+    "file_offset": "2B005",
+    "bank": "2A",
+    "cpu_address": "7005",
+    "instruction": ".WORD $0138",
+    "encoding": "0138"
+  },
+  {
+    "file_offset": "2B007",
+    "bank": "2A",
+    "cpu_address": "7007",
+    "instruction": "BCC secret_reject",
+    "encoding": "240d"
+  },
+  {
+    "file_offset": "2B009",
+    "bank": "2A",
+    "cpu_address": "7009",
+    "instruction": "JSR $86BF",
+    "encoding": "bd86bf"
+  },
+  {
+    "file_offset": "2B00C",
+    "bank": "2A",
+    "cpu_address": "700C",
+    "instruction": ".WORD $0139",
+    "encoding": "0139"
+  },
+  {
+    "file_offset": "2B00E",
+    "bank": "2A",
+    "cpu_address": "700E",
+    "instruction": "BCC secret_reject",
+    "encoding": "2406"
+  },
+  {
+    "file_offset": "2B010",
+    "bank": "2A",
+    "cpu_address": "7010",
+    "instruction": "LDX #$08E2",
+    "encoding": "8e08e2"
+  },
+  {
+    "file_offset": "2B013",
+    "bank": "2A",
+    "cpu_address": "7013",
+    "instruction": "JMP $56CB",
+    "encoding": "7e56cb"
+  },
+  {
+    "file_offset": "2B016",
+    "bank": "2A",
+    "cpu_address": "7016",
+    "instruction": "PULS D,X,PC",
+    "encoding": "3596"
+  },
+  {
+    "file_offset": "2B040",
+    "bank": "2A",
+    "cpu_address": "7040",
+    "instruction": "PSHS CC",
+    "encoding": "3401"
+  },
+  {
+    "file_offset": "2B042",
+    "bank": "2A",
+    "cpu_address": "7042",
+    "instruction": "ORCC #$50",
+    "encoding": "1a50"
+  },
+  {
+    "file_offset": "2B044",
+    "bank": "2A",
+    "cpu_address": "7044",
+    "instruction": "LDD #$0000",
+    "encoding": "cc0000"
+  },
+  {
+    "file_offset": "2B047",
+    "bank": "2A",
+    "cpu_address": "7047",
+    "instruction": "STD <$E6",
+    "encoding": "dde6"
+  },
+  {
+    "file_offset": "2B049",
+    "bank": "2A",
+    "cpu_address": "7049",
+    "instruction": "LDA <$7C",
+    "encoding": "967c"
+  },
+  {
+    "file_offset": "2B04B",
+    "bank": "2A",
+    "cpu_address": "704B",
+    "instruction": "ANDA #$FE",
+    "encoding": "84fe"
+  },
+  {
+    "file_offset": "2B04D",
+    "bank": "2A",
+    "cpu_address": "704D",
+    "instruction": "STA <$7C",
+    "encoding": "977c"
+  },
+  {
+    "file_offset": "2B04F",
+    "bank": "2A",
+    "cpu_address": "704F",
+    "instruction": "STA $3FE1",
+    "encoding": "b73fe1"
+  },
+  {
+    "file_offset": "2B052",
+    "bank": "2A",
+    "cpu_address": "7052",
+    "instruction": "PULS CC",
+    "encoding": "3501"
+  },
+  {
+    "file_offset": "2B054",
+    "bank": "2A",
+    "cpu_address": "7054",
+    "instruction": "LDD #$0000",
+    "encoding": "cc0000"
+  },
+  {
+    "file_offset": "2B057",
+    "bank": "2A",
+    "cpu_address": "7057",
+    "instruction": "RTS ",
+    "encoding": "39"
+  }
+]

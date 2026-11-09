@@ -1,0 +1,4 @@
+*.ips binary
+*.csv text eol=lf
+# A unified diff must retain its context prefixes and upstream indentation.
+*.patch -whitespace

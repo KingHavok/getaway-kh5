@@ -1,0 +1,2830 @@
+{
+  "core_a1_cold": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    }
+  ],
+  "core_a3_cold": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    }
+  ],
+  "core_a9_immediate_expiry": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 2,
+        "4": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 2,
+        "4": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 2,
+        "4": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 2,
+        "4": 5
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    }
+  ],
+  "core_b3_after_grace": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "008C",
+      "values": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 0,
+        "4": 5
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    }
+  ],
+  "core_f1_slow": [
+    {
+      "kind": "scalar_state",
+      "address": "008C",
+      "values": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "38:45A4": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "38:45A4": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "38:45A4": 1
+      }
+    }
+  ],
+  "core_a12_getaway_time": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 0,
+        "4": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    }
+  ],
+  "core_b3_intro_overlap": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 1,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 2,
+        "4": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 1,
+        "2A:6253": 0
+      }
+    }
+  ],
+  "core_b3_extended": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "008C",
+      "values": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 0,
+        "4": 5
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 0,
+        "41": 5
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0928",
+      "values": {
+        "0": 0,
+        "4": 5
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 3,
+        "2B:537A": 1,
+        "2A:6253": 1
+      }
+    }
+  ],
+  "core_a9_restart": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 3
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    }
+  ],
+  "secret_four": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 0,
+        "2A:56CB": 0,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    }
+  ],
+  "secret_tilt": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 0,
+        "2A:56CB": 0,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 1,
+        "2A:4654": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "008C",
+      "values": {
+        "0": 1,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 1,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5776": 1,
+        "2A:4654": 1
+      }
+    }
+  ],
+  "secret_success_launched": [
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 0,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 0,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 0,
+        "2A:56CB": 0,
+        "2A:5730": 0,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 1,
+        "41": 2
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 1,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5730": 0,
+        "2A:5776": 0,
+        "2A:4654": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 2,
+        "91": 0,
+        "95": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 2,
+        "91": 0,
+        "95": 0
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "040F",
+      "values": {
+        "0": 1,
+        "1": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0903",
+      "values": {
+        "37": 2,
+        "41": 2,
+        "91": 0,
+        "95": 0
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5730": 1,
+        "2A:5776": 1,
+        "2A:4654": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0000",
+      "values": {
+        "140": 0,
+        "141": 0,
+        "142": 0,
+        "1039": 1,
+        "1040": 1
+      }
+    },
+    {
+      "kind": "scalar_state",
+      "address": "0800",
+      "values": {
+        "5": 3,
+        "6": 3
+      }
+    },
+    {
+      "kind": "native_counts",
+      "counts": {
+        "2B:5200": 0,
+        "2A:6098": 2,
+        "2B:537A": 0,
+        "2A:6253": 0,
+        "2A:56F3": 1,
+        "2A:56CB": 1,
+        "2A:5730": 1,
+        "2A:5776": 1,
+        "2A:4654": 1
+      }
+    }
+  ]
+}

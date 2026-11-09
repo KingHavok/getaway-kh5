@@ -1,0 +1,489 @@
+{
+  "revision": "KH5",
+  "date": "2026-11-09",
+  "target": {
+    "bytes": 524288,
+    "crc32": "b9ba49b9",
+    "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+    "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+    "wpc_checksum": "0F05"
+  },
+  "status": "PASS for the checks listed; no hardware trial",
+  "conversion": {
+    "result": "PASS",
+    "changed_bytes_vs_L5": 186,
+    "authored_stage_bytes": 116,
+    "owner_local_LED": true,
+    "native_checksum": "0F05",
+    "python_tests": 11,
+    "baseline_integration": "PASS"
+  },
+  "native_boot": {
+    "result": "PASS",
+    "native_checksum": "0F05",
+    "native_success_pc": "8D30",
+    "display_observed": "REV. KH5",
+    "private_record_sha256": "3a24edc45746da69c31c1c1f94ed928ebb0d9ce7874dd6d9aa51f02c5b3948bf"
+  },
+  "native_guard": {
+    "result": "PASS",
+    "cases": 48,
+    "scope": "isolated native 6809 predicate/register/stack checks; not played games",
+    "public_build_reproduction": true,
+    "private_record_sha256": "e539f776edd64d71ececb3f7b200fa9f6d37ce82d92abe8ae88f5e2a20192872"
+  },
+  "targeted_gameplay": {
+    "result": "PASS",
+    "passed": 12,
+    "flagged": 0,
+    "sound_cpu_enabled": true,
+    "frames": 192388,
+    "private_report_sha256": "2db94c2b6f27bb6917c336457b71ed58fb08da14b9a19e47140860b5741c8d68",
+    "cases": [
+      {
+        "name": "core_a1_cold",
+        "result": "PASS",
+        "frames": 16270,
+        "checks": [
+          "Fresh DMD pixels show RUN, THE, RED, LIGHT, then the full phrase in order",
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 2,
+          "qualified": 0,
+          "live": 3
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 3,
+          "2A:6091": 6,
+          "2B:537A": 1,
+          "2A:6253": 1
+        },
+        "observations": [],
+        "private_script_sha256": "f8fb7ee17db405908aee9209ebd1f529af3773dd574c1808aa58ef8d2755a820",
+        "dmd_observation": {
+          "frames": 906,
+          "ordered_patterns": [
+            {
+              "word": "RUN",
+              "frame": 60
+            },
+            {
+              "word": "THE",
+              "frame": 81
+            },
+            {
+              "word": "RED",
+              "frame": 102
+            },
+            {
+              "word": "LIGHT",
+              "frame": 124
+            },
+            {
+              "word": "RUN THE / RED LIGHT",
+              "frame": 169
+            }
+          ]
+        }
+      },
+      {
+        "name": "core_b3_after_grace",
+        "result": "PASS",
+        "frames": 19876,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 5,
+          "qualified": 0,
+          "live": 3
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 3,
+          "2A:6091": 3,
+          "2B:537A": 1,
+          "2A:6253": 1
+        },
+        "observations": [],
+        "private_script_sha256": "d135638a430f53363e68a5b7168682c6cd5c4b70b59b1e662e7362c46d6d1ce7"
+      },
+      {
+        "name": "core_b3_intro_overlap",
+        "result": "PASS",
+        "frames": 15034,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 5,
+          "qualified": 3,
+          "live": 3
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 2,
+          "2A:6091": 3,
+          "2B:537A": 1,
+          "2A:6253": 0
+        },
+        "observations": [],
+        "private_script_sha256": "3469fe22e516c79ca07f96e92d2e6ef2377f5184060bd50867f9a0d33d6db56a"
+      },
+      {
+        "name": "secret_four",
+        "result": "PASS",
+        "frames": 4752,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 2,
+          "qualified": 3,
+          "live": 1
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 2,
+          "2A:6091": 2,
+          "2B:537A": 0,
+          "2A:6253": 0,
+          "2A:56F3": 1,
+          "2A:56CB": 1,
+          "2A:5776": 0,
+          "2A:4654": 0
+        },
+        "observations": [],
+        "private_script_sha256": "7ced0a3c9d201782ed612adb1eac74238b71c9587559ff0e58d88e68ab037f25"
+      },
+      {
+        "name": "core_a3_cold",
+        "result": "PASS",
+        "frames": 23074,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 1,
+          "qualified": 3,
+          "live": 1
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 2,
+          "2A:6091": 4,
+          "2B:537A": 0,
+          "2A:6253": 0
+        },
+        "observations": [],
+        "private_script_sha256": "85cbea5797bba23767d2e2672813fe8a3c01a269ebd5f23a0582034004edaa70"
+      },
+      {
+        "name": "core_f1_slow",
+        "result": "PASS",
+        "frames": 5682,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 0,
+          "qualified": 0,
+          "live": 1
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 0,
+          "2A:6091": 0,
+          "2B:537A": 0,
+          "2A:6253": 0,
+          "38:45A4": 1
+        },
+        "observations": [],
+        "private_script_sha256": "81c0defc7c7bde0df22506a71d52587a9a05992d681ad36a2997294d1f32dc77"
+      },
+      {
+        "name": "core_b3_extended",
+        "result": "PASS",
+        "frames": 30766,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 5,
+          "qualified": 0,
+          "live": 3
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 3,
+          "2A:6091": 7,
+          "2B:537A": 1,
+          "2A:6253": 1
+        },
+        "observations": [
+          {
+            "kind": "pre_guard_lock_callbacks",
+            "reference": 6,
+            "actual": 7
+          }
+        ],
+        "private_script_sha256": "6aa3e8f3f511592d4e3e4cca2a1549bdd2ba930cc11a8719dd4d24da665d04fc"
+      },
+      {
+        "name": "secret_tilt",
+        "result": "PASS",
+        "frames": 4972,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 2,
+          "phase": [
+            1,
+            0,
+            0
+          ],
+          "gear": 2,
+          "qualified": 3,
+          "live": 2
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 1,
+          "2A:6091": 2,
+          "2B:537A": 0,
+          "2A:6253": 0,
+          "2A:56F3": 1,
+          "2A:56CB": 1,
+          "2A:5776": 1,
+          "2A:4654": 1
+        },
+        "observations": [],
+        "private_script_sha256": "6ef26a076f0692cccbdec821d2872ae653f509765b2acae166cf0932fe8c54cd"
+      },
+      {
+        "name": "core_a9_immediate_expiry",
+        "result": "PASS",
+        "frames": 19372,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 2,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 1,
+          "qualified": 3,
+          "live": 1
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 2,
+          "2A:6091": 2,
+          "2B:537A": 0,
+          "2A:6253": 0
+        },
+        "observations": [],
+        "private_script_sha256": "a6c316e07bdac3d13e5cb019e573ff8fc655e01fb0d8bdd2fa074feb680d1cce"
+      },
+      {
+        "name": "core_a12_getaway_time",
+        "result": "PASS",
+        "frames": 23980,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 1,
+          "qualified": 0,
+          "live": 3
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 3,
+          "2A:6091": 5,
+          "2B:537A": 1,
+          "2A:6253": 1
+        },
+        "observations": [],
+        "private_script_sha256": "1c9ed3853cc75985439f81427a019dbda8d67809f2f92d74872da0ec4d94d0ad"
+      },
+      {
+        "name": "core_a9_restart",
+        "result": "PASS",
+        "frames": 21376,
+        "checks": [
+          "Restart cancels pending Redline initialization; physical ball inventory matches the reference",
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 1,
+          "qualified": 0,
+          "live": 1
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 2,
+          "2A:6091": 2,
+          "2B:537A": 0,
+          "2A:6253": 0
+        },
+        "observations": [],
+        "private_script_sha256": "7065cdb25ccf958b0283cb4a902ea781e6a2931556a332888c52ecf1c6b0b32b"
+      },
+      {
+        "name": "secret_success_launched",
+        "result": "PASS",
+        "frames": 7234,
+        "checks": [
+          "Guarded entries, mode starts and scenario state match verified reference; incidental callback/qualification differences are recorded"
+        ],
+        "final": {
+          "player": 1,
+          "ball": 1,
+          "phase": [
+            0,
+            0,
+            0
+          ],
+          "gear": 2,
+          "qualified": 3,
+          "live": 3
+        },
+        "native_counts": {
+          "2B:5200": 0,
+          "2A:6098": 2,
+          "2A:6091": 2,
+          "2B:537A": 0,
+          "2A:6253": 0,
+          "2A:56F3": 1,
+          "2A:56CB": 1,
+          "2A:5730": 1,
+          "2A:5776": 1,
+          "2A:4654": 1
+        },
+        "observations": [],
+        "private_script_sha256": "f250f0bd9794071fbe6185f83cf8df9fd4539d65abd5079824c66a4a57174a91"
+      }
+    ]
+  },
+  "public_source_build": {
+    "result": "PASS",
+    "emulator_sha256": "7aa9ea5ccb3239016053d4c06ccba0f5cdf13fae6d482858fa3997b70ed045ea",
+    "guard_cases": 48,
+    "gameplay_smoke": [
+      {
+        "case": "core_a1_cold",
+        "result": "PASS",
+        "frames": 16270,
+        "script_sha256": "5d7c96ade94016933320dc962b7938b622a9bbbebd626d0847065d36ec2d1cfd"
+      }
+    ],
+    "scope": "Additional reproduction of public build and helpers; 12-case results above used the calibrated private harness"
+  },
+  "publication_payload_audit": {
+    "result": "PASS",
+    "public_ips_changed_payload_bytes": 116,
+    "relocated_native_led_payload_distributed": false,
+    "led_reconstructed_from_owner_input": true,
+    "unchanged_carrier_bytes": 0,
+    "original_soren_trampoline_distributed": false,
+    "nontrivial_96_byte_game_sound_matches": 0,
+    "changes_from_g6": 25,
+    "allowed_g6_difference_regions": [
+      "numeric guard slot",
+      "two revision initials",
+      "checksum/correction words"
+    ],
+    "entire_private_rom_assets_or_dumps_included": false,
+    "limits": [
+      "Payload and provenance audit, not a legal determination of third-party rights",
+      "Very short opcode/interface constants can coincide with firmware; added routines are published with their original source"
+    ]
+  },
+  "historical_evidence": {
+    "scope": "G6 and official controls only, not KH5 execution",
+    "campaign_records": 913,
+    "final_gate_contracts": 12,
+    "main_seal_sha256": "cb333d3857503f55bcaffbb71c76bfce08a02ec84fdabd9ba0150f9050e3375c",
+    "B6_seal_sha256": "fced1b5d082e17d2d99bd6e2eb7e52a735ad4718e87411c6719150f280a79d0b",
+    "final_gate_seal_sha256": "4ebaf1d9dfad5a8dd5fbc065925ab4ea5f66bd31427ba37259408aada259d9c3"
+  },
+  "limits": [
+    "Not exhaustive coverage or a percentage of all machine states",
+    "Independent permanent-lockout and gear-loss reports remain unreproduced",
+    "B6 temporary hold closed as inferred expected behavior",
+    "No physical current, heat, ramp-clearance, LED or audible-sound validation",
+    "Raw evidence stays private because it can contain proprietary data"
+  ]
+}

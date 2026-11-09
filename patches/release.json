@@ -1,0 +1,48 @@
+{
+  "revision": "KH5",
+  "baseline": {
+    "bytes": 524288,
+    "crc32": "b97f3d62",
+    "sha1": "c87c36a2327561c50b37d587d3bd0782acf8860d",
+    "sha256": "c9015339fb0312eb84a580cc4f32de41b70c78931fad2cda515a28c6d4d0f0ac",
+    "wpc_checksum": "4905"
+  },
+  "target": {
+    "bytes": 524288,
+    "crc32": "b9ba49b9",
+    "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+    "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+    "wpc_checksum": "0F05"
+  },
+  "changed_bytes": 186,
+  "patch_sha256": "6431cb5a7577dd87e08d91fb31d472b0d8b0b440cda6b7baf7baaf454a918353",
+  "private_predecessor": {
+    "bytes": 524288,
+    "crc32": "40dc8f5f",
+    "sha1": "138156d02c1e615303d0c747e84b34e1b970cf83",
+    "sha256": "5e9e1853080ec0714222ad4c2bb0fe118bab3fbadaac5af2b53e0d7b6db505da",
+    "wpc_checksum": "0C06"
+  },
+  "changes_from_g6": 25,
+  "validation": {
+    "status": "PASS for documented KH5 checks",
+    "native_boot_checksum": "0F05",
+    "guard_cases_passed": 48,
+    "targeted_gameplay_passed": 12,
+    "targeted_gameplay_flagged": 0,
+    "public_build_reproduced": true,
+    "public_gameplay_smoke_passed": 1,
+    "hardware_tested": false,
+    "historical_G6_separate": true
+  },
+  "patch_file": "patches/L5-to-KH5-gameplay.ips",
+  "patch_changed_bytes": 116,
+  "conversion_steps": [
+    "verify exact official L5",
+    "apply authored gameplay IPS",
+    "reorder owner-supplied LED driver bytes locally",
+    "compute native checksum last",
+    "verify exact KH5 target hash"
+  ],
+  "standalone_ips": false
+}

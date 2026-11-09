@@ -1,0 +1,74 @@
+[
+  {
+    "name": "core_a1_cold",
+    "script": "tests/scenarios/core_a1_cold.json",
+    "frames": 16270,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_a3_cold",
+    "script": "tests/scenarios/core_a3_cold.json",
+    "frames": 23074,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_a9_immediate_expiry",
+    "script": "tests/scenarios/core_a9_immediate_expiry.json",
+    "frames": 19372,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_b3_after_grace",
+    "script": "tests/scenarios/core_b3_after_grace.json",
+    "frames": 19876,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_f1_slow",
+    "script": "tests/scenarios/core_f1_slow.json",
+    "frames": 5682,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_a12_getaway_time",
+    "script": "tests/scenarios/core_a12_getaway_time.json",
+    "frames": 23980,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_b3_intro_overlap",
+    "script": "tests/scenarios/core_b3_intro_overlap.json",
+    "frames": 15034,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_b3_extended",
+    "script": "tests/scenarios/core_b3_extended.json",
+    "frames": 30766,
+    "sound_cpu": true
+  },
+  {
+    "name": "core_a9_restart",
+    "script": "tests/scenarios/core_a9_restart.json",
+    "frames": 21376,
+    "sound_cpu": true
+  },
+  {
+    "name": "secret_four",
+    "script": "tests/scenarios/secret_four.json",
+    "frames": 4752,
+    "sound_cpu": true
+  },
+  {
+    "name": "secret_tilt",
+    "script": "tests/scenarios/secret_tilt.json",
+    "frames": 4972,
+    "sound_cpu": true
+  },
+  {
+    "name": "secret_success_launched",
+    "script": "tests/scenarios/secret_success_launched.json",
+    "frames": 7234,
+    "sound_cpu": true
+  }
+]

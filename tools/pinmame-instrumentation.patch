@@ -1,0 +1,416 @@
+--- a/src/remote_debug/api_handler.c
++++ b/src/remote_debug/api_handler.c
+@@ -19,6 +19,7 @@
+ #include "mame.h"
+ #include "wpc/core.h"
+ #include "wpc/wpc.h"
++#include "wpc/getaway_test.h"
+ #include "cpuintrf.h"
+ #include "cpu/m6809/m6809.h"
+ #include "cpu/m6800/m6800.h"
+@@ -359,13 +360,13 @@
+ 		ded = wpc_data ? wpc_data[0] : 0;
+ 		len = snprintf(buffer, 8192,
+ 			"{\"game\": \"%s\", \"description\": \"%s\", \"manufacturer\": \"%s\", "
+-			"\"year\": \"%s\", \"paused\": %d, \"wpc_bank\": %d, \"lamps\": \"%s\", "
++			"\"year\": \"%s\", \"paused\": %d, \"wpc_bank\": %d, \"frames_remaining\": %d, \"lamps\": \"%s\", "
+ 			"\"switches\": \"%s\", \"segments\": \"%s\", \"dedicated\": %d, "
+ 			"\"solenoids\": %u, \"solenoids2\": %u, \"gi\": %s}",
+ 			Machine->gamedrv->name,
+ 			remote_debug_json_escape(desc_esc, (int)sizeof(desc_esc), Machine->gamedrv->description),
+ 			Machine->gamedrv->manufacturer, Machine->gamedrv->year,
+-			remote_debug_is_paused(), bank, lamp_hex, sw_hex, seg_hex, ded,
++			remote_debug_is_paused(), bank, remote_debug_frames_remaining(), lamp_hex, sw_hex, seg_hex, ded,
+ 			coreGlobals.solenoids, coreGlobals.solenoids2, gi_str);
+ 		remote_debug_unlock();
+ 		resp->body = buffer;
+@@ -506,6 +507,17 @@
+ 		remote_debug_step_out();
+ 	else if (strcmp(cmd_buf, "reset") == 0)
+ 		remote_debug_reset();
++	else if (strcmp(cmd_buf, "frames") == 0) {
++		char count_buf[32];
++		int count;
++		get_query_param(req->query, "count", count_buf, (int)sizeof(count_buf));
++		count = parse_int(count_buf);
++		if (count < 1 || count > 3600) {
++			respond_error(resp, 400, "count must be 1..3600 frames");
++			return;
++		}
++		remote_debug_run_frames(count);
++	}
+ 	else if (strcmp(cmd_buf, "exit") == 0)
+ 		remote_debug_quit();
+ 	else {
+@@ -1464,9 +1476,33 @@
+ 	respond_owned(resp, body, len, "application/json");
+ }
+ 
++static void handle_api_getaway_test(const http_request_t *req, http_response_t *resp)
++{
++    char cmd[32],kind[32],id[32],val[32];
++    char *body;
++    get_query_param(req->query,"cmd",cmd,sizeof(cmd));
++    get_query_param(req->query,"kind",kind,sizeof(kind));
++    get_query_param(req->query,"id",id,sizeof(id));
++    get_query_param(req->query,"val",val,sizeof(val));
++    remote_debug_lock();
++    if (cmd[0] && !remote_debug_is_paused()) {
++        remote_debug_unlock(); respond_error(resp,400,"pause before changing a test fault"); return;
++    }
++    if (!strcmp(cmd,"set")) {
++        if (!id[0] || !val[0] || gwtest_set(kind,parse_int(id),parse_int(val))) {
++            remote_debug_unlock(); respond_error(resp,400,"invalid test fault"); return;
++        }
++    } else if (!strcmp(cmd,"clear")) gwtest_clear();
++    else if (cmd[0]) { remote_debug_unlock(); respond_error(resp,400,"cmd must be set|clear or omitted"); return; }
++    body=gwtest_status();
++    remote_debug_unlock();
++    if (!body) { respond_error(resp,500,"allocation failed"); return; }
++    respond_owned(resp,body,(int)strlen(body),"application/json");
++}
++
+ static void handle_api_debugger_tracepoints(const http_request_t *req, http_response_t *resp)
+ {
+-	char cmd_buf[32], addr_buf[32], bank_buf[32], cpu_buf[32];
++	char cmd_buf[32], addr_buf[32], bank_buf[32], cpu_buf[32], cond_buf[32];
+ 	char *body = NULL;
+ 	int len = 0;
+ 	get_query_param(req->query, "cmd", cmd_buf, (int)sizeof(cmd_buf));
+@@ -1479,9 +1515,10 @@
+ 			respond_error(resp, 400, "missing parameter: addr");
+ 			return;
+ 		}
++		get_query_param(req->query, "cond", cond_buf, (int)sizeof(cond_buf));
+ 		bank = bank_buf[0] ? (int)parse_hex(bank_buf) : -1;
+ 		cpu = cpu_buf[0] ? parse_int(cpu_buf) : -1;
+-		if (remote_debug_tracepoint_add(parse_hex(addr_buf), bank, cpu) != 0) {
++		if (remote_debug_tracepoint_add(parse_hex(addr_buf), bank, cpu, cond_buf) != 0) {
+ 			respond_error(resp, 400, "tracepoint table full");
+ 			return;
+ 		}
+@@ -1587,6 +1624,7 @@
+ 	 "instruction trace ring; ?cmd=start|stop|clear | list (last N executed)"},
+ 	{"/api/debugger/coverage", handle_api_debugger_coverage,
+ 	 "code coverage; ?cmd=start|stop|clear | summary | ?addr=HEX[&size=N][&bank=HEX] region"},
++	{"/api/getaway/test", handle_api_getaway_test, "private sensor/mechanism fault layer and physical ball inventory"},
+ 	{"/api/debugger/tracepoints", handle_api_debugger_tracepoints,
+ 	 "log-and-continue points; ?cmd=add&addr=HEX[&bank=HEX][&cpu=N] | ?cmd=clear | list+log"},
+ 	{"/api/debugger/scan", handle_api_debugger_scan,
+--- a/src/remote_debug/http_server.c
++++ b/src/remote_debug/http_server.c
+@@ -257,7 +257,7 @@
+ 
+ 	memset(&address, 0, sizeof(address));
+ 	address.sin_family = AF_INET;
+-	address.sin_addr.s_addr = htonl(INADDR_ANY);
++	address.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+ 	address.sin_port = htons((unsigned short)port);
+ 
+ 	if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
+--- a/src/remote_debug/remote_debug.c
++++ b/src/remote_debug/remote_debug.c
+@@ -30,6 +30,7 @@
+ /* Control flags shared between the emulator and the HTTP server thread.
+  * sig_atomic_t reads/writes are atomic; no lock needed for these. */
+ static volatile sig_atomic_t is_paused = 0;
++static int local_frames_remaining = 0;
+ static volatile sig_atomic_t step_requested = 0;
+ /* set when the one instruction of a step has been let through */
+ static volatile sig_atomic_t step_done = 0;
+@@ -293,6 +294,7 @@
+ 	int bank;
+ 	int cpu;              /* -1: any CPU */
+ 	UINT32 hits;
++	breakpoint_t condition;
+ } tracepoint_t;
+ 
+ static tracepoint_t tracepoints[MAX_POINTS];
+@@ -303,6 +305,8 @@
+ 	int bank;
+ 	UINT16 x, y, u, s;
+ 	UINT8 a, b, dp, cc;
++	double emulated_time;
++	UINT8 ram[0xA00], stack[64];
+ } tp_log_t;
+ 
+ #define TP_LOG_SIZE 512
+@@ -369,7 +373,7 @@
+ /* DMD frame recorder                                                 */
+ /* ------------------------------------------------------------------ */
+ 
+-#define DMD_REC_FRAMES 512    /* ring capacity (~8s at 60Hz) */
++#define DMD_REC_FRAMES 2048    /* ring capacity (~8s at 60Hz) */
+ #define DMD_REC_PIX    4096   /* max pixels per frame (128x32) */
+ 
+ typedef struct {
+@@ -803,6 +807,19 @@
+ 		              is_paused ? "halt" : "resume");
+ }
+ 
++int remote_debug_frames_remaining(void)
++{
++	return local_frames_remaining;
++}
++
++void remote_debug_run_frames(int count)
++{
++	remote_debug_lock();
++	local_frames_remaining = count;
++	remote_debug_set_paused(0);
++	remote_debug_unlock();
++}
++
+ void remote_debug_step(void)
+ {
+ 	is_paused = 1;
+@@ -1058,7 +1075,8 @@
+ 	for (i = 0; i < tracepoint_count; i++) {
+ 		if (tracepoints[i].addr == pc
+ 				&& (tracepoints[i].bank == -1 || tracepoints[i].bank == current_bank)
+-				&& (tracepoints[i].cpu == -1 || tracepoints[i].cpu == current_cpu)) {
++				&& (tracepoints[i].cpu == -1 || tracepoints[i].cpu == current_cpu)
++				&& cond_matches(&tracepoints[i].condition)) {
+ 			tp_log_t *t = &tp_log[tp_head];
+ 			tracepoints[i].hits++;
+ 			t->pc = pc;
+@@ -1071,6 +1089,14 @@
+ 			t->s = (UINT16)activecpu_get_reg(REG_SP);
+ 			t->dp = (UINT8)ACTIVE_REG(regs, dp);
+ 			t->cc = (UINT8)ACTIVE_REG(regs, cc);
++			t->emulated_time = timer_get_time();
++			memset(t->ram, 0, sizeof(t->ram));
++			memset(t->stack, 0, sizeof(t->stack));
++			if (current_cpu == 0 && wpc_ram) {
++				memcpy(t->ram, wpc_ram, sizeof(t->ram));
++				if (t->s + sizeof(t->stack) <= 0x3000)
++					memcpy(t->stack, wpc_ram + t->s, sizeof(t->stack));
++			}
+ 			tp_head = (tp_head + 1) % TP_LOG_SIZE;
+ 			if (tp_count < TP_LOG_SIZE)
+ 				tp_count++;
+@@ -1724,6 +1750,10 @@
+ 	/* sample monitored objects and record DMD frames once per frame */
+ 	remote_debug_monitor_sample();
+ 	remote_debug_dmdrec_sample();
++	remote_debug_lock();
++	if (local_frames_remaining > 0 && --local_frames_remaining == 0)
++		remote_debug_set_paused(1);
++	remote_debug_unlock();
+ }
+ 
+ void remote_debug_get_screenshot_info(int *w, int *h)
+@@ -3065,11 +3095,19 @@
+ /* Tracepoints (log-and-continue)                                     */
+ /* ================================================================== */
+ 
+-int remote_debug_tracepoint_add(UINT32 addr, int bank, int cpu)
++int remote_debug_tracepoint_add(UINT32 addr, int bank, int cpu, const char *cond)
+ {
+ 	int result = -1;
+ 	remote_debug_lock();
+ 	if (tracepoint_count < MAX_POINTS) {
++		breakpoint_t *condition = &tracepoints[tracepoint_count].condition;
++		int cond_cpu = (cpu >= 0 && cpu < cpu_gettotalcpu()) ? cpu : 0;
++		int cond_type = Machine ? Machine->drv->cpu[cond_cpu].cpu_type : CPU_M6809;
++		memset(condition, 0, sizeof(*condition));
++		if (parse_condition(cond, cond_type, &condition->cond_op, &condition->cond_reg, &condition->cond_val) != 0) {
++			remote_debug_unlock();
++			return -1;
++		}
+ 		tracepoints[tracepoint_count].addr = addr;
+ 		tracepoints[tracepoint_count].bank = bank;
+ 		tracepoints[tracepoint_count].cpu = cpu;
+@@ -3105,11 +3143,18 @@
+ 	for (i = 0; i < tp_count; i++) {
+ 		int idx = (tp_head - tp_count + i + TP_LOG_SIZE) % TP_LOG_SIZE;
+ 		const tp_log_t *t = &tp_log[idx];
++		char ram_hex[0xA00*2+1], stack_hex[64*2+1];
++		static const char digits[] = "0123456789abcdef";
++		int j;
++		for (j=0; j<0xA00; j++) { ram_hex[j*2]=digits[t->ram[j]>>4]; ram_hex[j*2+1]=digits[t->ram[j]&15]; }
++		ram_hex[0xA00*2]=0;
++		for (j=0; j<64; j++) { stack_hex[j*2]=digits[t->stack[j]>>4]; stack_hex[j*2+1]=digits[t->stack[j]&15]; }
++		stack_hex[128]=0;
+ 		sb_appendf(&sb,
+ 			"%s{\"pc\": %u, \"bank\": %d, \"a\": %u, \"b\": %u, \"x\": %u, "
+-			"\"y\": %u, \"u\": %u, \"s\": %u, \"dp\": %u, \"cc\": %u}",
++			"\"y\": %u, \"u\": %u, \"s\": %u, \"dp\": %u, \"cc\": %u, \"time\": %.9f, \"ram\": \"%s\", \"stack\": \"%s\"}",
+ 			(i > 0) ? "," : "", t->pc, t->bank, t->a, t->b, t->x,
+-			t->y, t->u, t->s, t->dp, t->cc);
++			t->y, t->u, t->s, t->dp, t->cc, t->emulated_time, ram_hex, stack_hex);
+ 	}
+ 	sb_appendf(&sb, "]}");
+ 	remote_debug_unlock();
+--- a/src/remote_debug/remote_debug.h
++++ b/src/remote_debug/remote_debug.h
+@@ -53,6 +53,8 @@
+ 
+ /* Pause (1) or resume (0) execution. */
+ void remote_debug_set_paused(int paused);
++void remote_debug_run_frames(int count);
++int remote_debug_frames_remaining(void);
+ 
+ /* Nonzero for the CPUs of the M6800 core (M6800/1/2/3/8, HD63701, NSC8105
+  * - the main CPU of Williams System 3-11), which share one register set. */
+@@ -290,7 +292,7 @@
+ /* ------------------------------------------------------------------ */
+ 
+ /* Add a tracepoint at addr (bank/cpu -1 = any). Returns 0, -1 if full. */
+-int remote_debug_tracepoint_add(UINT32 addr, int bank, int cpu);
++int remote_debug_tracepoint_add(UINT32 addr, int bank, int cpu, const char *cond);
+ void remote_debug_tracepoint_clear(void);
+ 
+ /* JSON of tracepoints and their collected register-snapshot log. malloc()ed. */
+--- a/src/unix/config.c
++++ b/src/unix/config.c
+@@ -335,7 +335,7 @@
+ 		return OSD_NOT_OK;
+ 
+ 	/* get the homedir */
+-	if(!(home_dir = rc_get_home_dir()))
++	if(!(home_dir = getenv("PINMAME_WORK_HOME") ? strdup(getenv("PINMAME_WORK_HOME")) : rc_get_home_dir()))
+ 		return OSD_NOT_OK;
+ 
+ 	/* check that the required dirs exist, and create them if necessary */
+--- a/src/wpc/wpc.c
++++ b/src/wpc/wpc.c
+@@ -149,6 +149,7 @@
+ /*-- pointers --*/
+ static mame_file *wpc_printfile = NULL;
+ UINT8 *wpc_ram = NULL;
++#include "getaway_test.c"
+ 
+ /*---------------------------
+ /  Memory map for CPU board
+@@ -642,21 +643,21 @@
+   switch (offset) {
+     case WPC_FLIPPERS: /* Flipper switches */
+       if ((core_gameData->gen & GENWPC_HASWPC95) == 0)
+-        return ~coreGlobals.swMatrix[CORE_FLIPPERSWCOL];
++        return ~gwtest_flipper_switches(coreGlobals.swMatrix[CORE_FLIPPERSWCOL]);
+       break;
+     case WPC_FLIPPERSW95:
+       if (core_gameData->hw.gameSpecific1 & WPC_PH) { // PH: reel switches
+         return ~coreGlobals.swMatrix[3];
+       }
+       if (core_gameData->gen & GENWPC_HASWPC95)
+-        return ~coreGlobals.swMatrix[CORE_FLIPPERSWCOL];
++        return ~gwtest_flipper_switches(coreGlobals.swMatrix[CORE_FLIPPERSWCOL]);
+       break;
+     case WPC_SWCOINDOOR: /* cabinet switches */
+       return coreGlobals.swMatrix[CORE_COINDOORSWCOL];
+     case WPC_SWROWREAD: /* read row */
+       if (core_gameData->gen & GENWPC_HASPIC)
+         return wpc_pic_r();
+-      return core_getSwCol(wpc_data[WPC_SWCOLSELECT]);
++      return gwtest_switch_column(wpc_data[WPC_SWCOLSELECT], core_getSwCol(wpc_data[WPC_SWCOLSELECT]));
+     case WPC_SHIFTADRH:
+       return wpc_data[WPC_SHIFTADRH] +
+              ((wpc_data[WPC_SHIFTADRL] + (wpc_data[WPC_SHIFTBIT]>>3))>>8);
+@@ -756,6 +757,7 @@
+ }
+ 
+ WRITE_HANDLER(wpc_w) {
++  gwtest_raw_write(offset, data);
+ #ifdef PROC_SUPPORT
+   if (coreGlobals.p_rocEn) {
+     // process immediate coil changes for C01 to C28 and C37 to C40
+--- a/src/wpc/sim.c
++++ b/src/wpc/sim.c
+@@ -1,3 +1,4 @@
++#include "getaway_test.h"
+ #include "driver.h"
+ #include "core.h"
+ #include "wpc.h"
+@@ -145,7 +146,7 @@
+         if (ball->state != ball->nextState) {
+           /*-- try to move the ball --*/
+           if ((sd->solSwNo) && !(sd->flags & (SIM_STSWON | SIM_STSWOFF)) &&
+-              core_getSol(sd->solSwNo)) {
++              gwtest_mechanism_sol(sd->solSwNo, core_getSol(sd->solSwNo))) {
+             /*-- next state is blocked by a solenoid --*/
+             break;
+           }
+@@ -189,13 +190,13 @@
+         else if ((sd->solSwNo == 0) || (sd->flags & SIM_STIGNORESOL) ||
+                  ((sd->flags & SIM_STSWON)  && core_getSw(sd->solSwNo)) ||
+                  ((sd->flags & SIM_STSWOFF) && !core_getSw(sd->solSwNo)) ||
+-                 (!(sd->flags & (SIM_STSWON|SIM_STSWOFF)) && core_getSol(sd->solSwNo))) {
++                 (!(sd->flags & (SIM_STSWON|SIM_STSWOFF)) && gwtest_mechanism_sol(sd->solSwNo, core_getSol(sd->solSwNo)))) {
+           if (sd->flags & SIM_STSHOOT) ball->speed = locals.shooterSpeed;
+           if (sd->nextState) {
+             ball->nextState = ((sd->altSolSw) &&
+                                (((sd->flags & SIM_STSWON) && core_getSw(sd->altSolSw)) ||
+                                 ((sd->flags & SIM_STSWOFF) && !core_getSw(sd->altSolSw)) ||
+-                                (!(sd->flags & (SIM_STSWON|SIM_STSWOFF)) && core_getSol(sd->altSolSw)))) ?
++                                (!(sd->flags & (SIM_STSWON|SIM_STSWOFF)) && gwtest_mechanism_sol(sd->altSolSw, core_getSol(sd->altSolSw))))) ?
+                               sd->altState : sd->nextState;
+             ball->nextTimer = sd->nextTimer * SIM_TIMEFACTOR;
+           }
+@@ -208,7 +209,7 @@
+         else
+           break;
+       }
+-nextStateBusy: ;
++nextStateBusy: gwtest_ball_update(ii, ball->state, ball->nextState, ball->timer, ii < noOfBalls);
+     }
+   }
+ }
+--- a/src/wpc/sims/wpc/full/gw.c
++++ b/src/wpc/sims/wpc/full/gw.c
+@@ -1,3 +1,4 @@
++#include "getaway_test.h"
+ // license:BSD-3-Clause
+ 
+ /********************************************************************************************
+@@ -570,7 +571,7 @@
+ static core_tGameData gwGameData = {
+   GEN_WPCFLIPTRON, wpc_dispDMD,	/* generation */
+   {
+-    FLIP_SW(FLIP_L | FLIP_UR) | FLIP_SOL(FLIP_L | FLIP_UR),	/* Which switches are the flippers */
++    FLIP_SW(FLIP_L | FLIP_UR) | FLIP_SOL(FLIP_L | FLIP_UR) | FLIP_BUT(FLIP_UR),	/* Which switches are the flippers */
+     0,0,0,0,0,0,0,
+     NULL, gw_handleMech, NULL, gw_drawMech,
+     &gw_lampPos
+@@ -592,6 +593,7 @@
+ /  Game handling
+ /----------------*/
+ static void init_gw(void) {
++  gwSimData.autoBall = TRUE; /* local harness: route shots to a ball in play */
+   core_gameData = &gwGameData;
+   hc55516_set_sample_clock(0, 22372);
+ }
+@@ -606,14 +608,20 @@
+      ------------------------------------- */
+   if (mech & 0x01) {
+     /*-- if Ramp is up, & Ramp Down Solenoid firing lower it! --*/
+-    if (locals.rampPos == UP && core_getSol(sRampDown)) {
++    if (locals.rampPos == UP && gwtest_mechanism_sol(sRampDown, core_getSol(sRampDown))) {
+       locals.rampPos = DOWN;
+       core_setSw(swRampDown,1); /*If Ramp Down, Switch Must be Active*/
+     }
+     /*-- if Ramp is down, & Ramp Up Solenoid firing raise it! --*/
+-    if (locals.rampPos == DOWN && core_getSol(sRampUp)) {
++    if (locals.rampPos == DOWN && gwtest_mechanism_sol(sRampUp, core_getSol(sRampUp))) {
+       locals.rampPos = UP;
+       core_setSw(swRampDown,0); /*If Ramp Up, Switch Must be InActive*/
+     }
+   }
+ }
++
++
++WPC_ROMSTART(gw,kh5,"getaw_kh5.rom",0x80000,CRC(b9ba49b9) SHA1(7d65af17fb6297e7e434a6154f96647493c8460c))
++WPCS_SOUNDROM8xx("u18snd",CRC(37bbe485) SHA1(e6b7ccef250db0c801e3dd8ebf93522b466ca1ec))
++WPC_ROMEND
++CORE_CLONEDEF(gw,kh5,l5,"The Getaway - KingHavok KH5",2026,"KingHavok",wpc_mFliptronS,0)
+--- a/src/wpc/driver.c
++++ b/src/wpc/driver.c
+@@ -3010,6 +3010,7 @@
+ DRIVER(gw,d2)           //                  Getaway: High Speed II, The (D-2) LED Ghost Fix
+ DRIVER(gw,l3)           //          06/92 W Getaway: High Speed II, The (L-3)
+ DRIVER(gw,d3)           //                  Getaway: High Speed II, The (D-3) LED Ghost Fix
++DRIVER(gw,kh5) // local patch research; no ROM included
+ DRIVER(gw,l5)           //          12/92 W Getaway: High Speed II, The (L-5)
+ DRIVER(gw,d5)           //                  Getaway: High Speed II, The (D-5) LED Ghost Fix
+ DRIVER(gw,l5c)          //          08/17   Getaway: High Speed II, The (L-5C Competition MOD)

@@ -1,0 +1,15 @@
+name: ROM-free checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  public-checks:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Synthetic unit checks, no game ROMs
+        run: python3 -m unittest discover -s tests -v
+      - name: Public file and IPS boundary checks
+        run: python3 tools/check_public_tree.py
