@@ -62,6 +62,7 @@ after injected faults were removed.
 | KH5 gameplay regressions | 12 targeted replays with the emulated sound CPU enabled | Exact KH5 release |
 | KH5 native guard checks | 48 cases covering admission, pending/running Redline, D and stack | Exact KH5 code in unit fixtures |
 | Direct guard comparison | 524,288 counter/register/flag vectors, plus 196,608 with the pending-mode wrapper | Native unit fixtures comparing KH5 code with the L5C numeric guard |
+| Guard interrupt checks | 1,448 injected IRQ/FIRQ cases, including nested interrupts and the emulated WPC timer | 700 KH5 cases and 748 reference cases in native unit fixtures |
 | LED equivalence | Complete LED-only output identical to wpclp; zero differences in KH5's 139-byte driver region | Exact KH5 release |
 | Boot and conversion | Native ROM checksum passes; baseline, source reconstruction and final image hashes verified | Exact KH5 release |
 

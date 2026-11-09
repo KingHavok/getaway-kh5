@@ -14,6 +14,7 @@ See `evidence/summary.json` for completed counts and current release status.
 | Native boot | Actual WPC sum loop reaches its zero-difference success branch; private display observation reads REV. KH5 |
 | Native guard | 48 isolated 6809 cases: 4 qualification counts × 4 live counts × absent/F2/F3 task state; D and caller/continuation stack checked |
 | Direct numeric-guard differential | All 256 × 256 counter pairs in eight D/CC/native-phase profiles: 524,288 comparisons; plus 196,608 behind the same pending-mode wrapper; negative control detects a broken guard; [scope and evidence](changes/multiball.md#direct-comparison-with-sorens-numeric-guard) |
+| Guard interrupts | 700 KH5 and 748 reference injection cases: IRQ, DMD FIRQ, hardware-timer FIRQ and nested FIRQ at visited instruction boundaries; [scope and evidence](changes/multiball.md#interrupt-safety-investigation) |
 | A1/A3 | Lock/jackpot/super sequences; native entry counters reject repeated starts, preserve running Redline |
 | A9/B3 | Immediate startup drain, after-grace admission, actual intro/third-lock overlap and extended timings |
 | A12/F1 | Intended later one-ball lock/ordinary start, SLOW Start hold and pending-intro restart |

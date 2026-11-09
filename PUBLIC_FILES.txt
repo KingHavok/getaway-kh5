@@ -22,6 +22,7 @@ docs/publication.md
 docs/sources.md
 docs/testing.md
 evidence/guard-equivalence.json
+evidence/guard-interrupts.json
 evidence/historical-g6-cases.json
 evidence/led-equivalence.json
 evidence/summary.json
@@ -61,5 +62,6 @@ tools/pinmame/getaway_test.c
 tools/pinmame/getaway_test.h
 tools/replay.py
 tools/run_guard_tests.py
+tools/test_guard_interrupts.py
 tools/verify_led.py
 tools/verify_output.py

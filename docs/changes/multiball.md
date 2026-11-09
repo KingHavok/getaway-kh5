@@ -87,3 +87,68 @@ python3 tools/compare_guards.py --emulator /private/path/sdl3pinmame \
 Use `--pending-wrapper` in a fresh output directory for the task-state comparison,
 or `--negative-control` for the deliberate-fault check. All generated fixtures
 are private **UNIT_ONLY_NEVER_BURN** images; they are not playable releases.
+
+## Interrupt safety investigation
+
+The original counter matrix masks IRQ/FIRQ. A separate investigation on
+9 November 2026 tested interruptions explicitly and found no failure requiring
+a change to the released ROM. [Evidence](../../evidence/guard-interrupts.json)
+records **700 KH5 cases and 748 reference cases**, all passing. The reference uses
+Soren's numeric routine behind the same pending-mode wrapper; its extra
+instructions account for the different number of injection points.
+
+The numeric guard does not change the IRQ/FIRQ mask bits. The additional two
+cycles on admission are ordinary CPU work, not an added critical section.
+Interrupts are taken at instruction boundaries, so a push/pull instruction is
+not interrupted halfway through a register transfer. Even the gap between the
+rewrite's `PULS D` and `PSHS D` has a valid caller return address on the stack.
+That gap is included in the tests.
+
+The initialized native IRQ path saves the full CPU context and returns through
+RTI. The active DMD FIRQ path explicitly saves A, which the rewrite temporarily
+uses for its comparisons. The default high-resolution timer FIRQ callback
+acknowledges its source and returns. The inspected IRQ paths service I/O,
+switch buffers, flippers and PWM, then return; they do not dispatch another
+gameplay task. No guard-input changes were observed in the tested paths.
+
+The unit fixtures first boot the native OS and establish the ordinary code-bank
+shadow as well as the ASIC bank before entering the real hook. The native IRQ
+restores that shadow; a fixture that sets only the ASIC bank would not model the
+caller's bank contract correctly. The tests check the actual selected bank and
+its visible guard bytes after each interrupt.
+
+At every visited instruction boundary in the hook, wrapper, numeric guard,
+shared phase predicate and task-lookup interface, four cases execute:
+
+1. IRQ asserted through the debugger's CPU pending-line state.
+2. DMD FIRQ asserted the same way.
+3. Timer FIRQ raised by the actual emulated WPC high-resolution timer.
+4. IRQ followed by a nested DMD FIRQ before the IRQ handler proceeds.
+
+The unmodified CPU core builds each interrupt frame; entry vector and frame size
+are checked before the unmodified native handler runs. Return must preserve
+PC, SP, D, DP, X, Y, U, all non-E CC bits, guard inputs and code bank. E is the
+6809 hardware frame-format flag: IRQ forces it set in the saved frame and FIRQ
+clears it. This expected difference is normalized; arithmetic flags and interrupt
+mask bits are checked exactly against the requested pre-interrupt state.
+
+The eight scenarios include zero qualification, zero/two live balls, the signed
+overflow boundary, high-bit/max qualification, pending F2 and running F3. They
+also exercise inactive and active native PWM timer values. Final admission,
+caller D and the continuation/return stack contract must remain correct.
+
+These are isolated CPU fixtures, not played games or hardware trials. Scheduler
+search internals execute normally between the tested lookup-interface points.
+The tests cover the initialized normal IRQ, DMD and timer callbacks, not every
+arbitrary callback configuration, NMI, corrupted pointer or interrupt/device
+combination. They complement the IRQ/FIRQ-enabled KH5 gameplay regressions.
+
+To reproduce, provide your own qualified KH5, U18 and optional L5C reference:
+
+```sh
+python3 tools/test_guard_interrupts.py --emulator /private/path/sdl3pinmame \
+  --rom /private/path/getaway_kh5.bin --sound /private/path/u18snd \
+  --reference /private/path/getaway_l5c.bin --output /private/path/guard-interrupts
+```
+
+All generated fixture images remain private and are **UNIT_ONLY_NEVER_BURN**.

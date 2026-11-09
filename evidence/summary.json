@@ -507,5 +507,16 @@
     "cycle_identical": false,
     "record": "guard-equivalence.json",
     "scope": "Native unit fixtures with IRQ/FIRQ masked; full counter bytes in documented register/flag/task profiles; no ROM changes"
+  },
+  "guard_interrupt_checks": {
+    "result": "PASS",
+    "KH5_cases": 700,
+    "reference_cases": 748,
+    "total_injections": 1448,
+    "native_interrupt_services": 1810,
+    "failures": 0,
+    "record": "guard-interrupts.json",
+    "scope": "Visited instruction boundaries, normal initialized IRQ/DMD/timer callbacks; includes nested FIRQ; unit fixtures, not hardware",
+    "ROM_changed": false
   }
 }
