@@ -1,0 +1,276 @@
+{
+  "date": "2026-11-09",
+  "result": "PASS",
+  "numeric": {
+    "result": "PASS",
+    "verification_source_sha256": "98391735cc929d215fa7cc046e8ccd42ba68f9c33e9919193d0f973a3de2ad06",
+    "pending_wrapper": false,
+    "negative_control": false,
+    "target": {
+      "bytes": 524288,
+      "crc32": "b9ba49b9",
+      "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+      "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+      "wpc_checksum": "0F05"
+    },
+    "reference_sha1": "16e83bc01c452781150275a0e88a71072cf9bc43",
+    "fixture_sha256": "3beb9745b41231e59352a0a3df5a59943e686a516bf9296373242c172fc16f23",
+    "emulator_sha256": "7aa9ea5ccb3239016053d4c06ccba0f5cdf13fae6d482858fa3997b70ed045ea",
+    "profiles": [
+      {
+        "profile": 0,
+        "initial_D": "0000",
+        "initial_CC": "50",
+        "native_phase": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 1,
+        "initial_D": "FFFF",
+        "initial_CC": "51",
+        "native_phase": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 2,
+        "initial_D": "1234",
+        "initial_CC": "52",
+        "native_phase": [
+          0,
+          128,
+          0,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 3,
+        "initial_D": "80FF",
+        "initial_CC": "54",
+        "native_phase": [
+          0,
+          0,
+          255,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 4,
+        "initial_D": "7F00",
+        "initial_CC": "58",
+        "native_phase": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 5,
+        "initial_D": "00FF",
+        "initial_CC": "70",
+        "native_phase": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 6,
+        "initial_D": "FF00",
+        "initial_CC": "D0",
+        "native_phase": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 7,
+        "initial_D": "A55A",
+        "initial_CC": "FF",
+        "native_phase": [
+          128,
+          0,
+          0,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      }
+    ],
+    "compared_vectors": 524288,
+    "guard_invocations": 1048576,
+    "qualified_range": [
+      0,
+      255
+    ],
+    "live_range": [
+      0,
+      255
+    ],
+    "checked": [
+      "admission vs reference and independent predicate",
+      "CC including carry/overflow/negative/zero",
+      "D, DP, X, Y, U",
+      "stack pointer at return/continuation",
+      "accepted saved-D stack frame"
+    ],
+    "native_predicate_retained": true,
+    "IRQs_and_FIRQs_masked": true,
+    "scope": "Numeric guard comparison; pending wrapper, when enabled, is identical on both sides and retains native task lookup; not equality to unmodified L5C as a whole",
+    "limits": [
+      "Not cycle-identical; different instruction counts and scratch-stack writes",
+      "No interrupt arrival interleavings or arbitrary corrupt scheduler simulation",
+      "Caller DP=0; normal game contract",
+      "Unit fixture, not gameplay; NEVER BURN"
+    ]
+  },
+  "pending_wrapper": {
+    "result": "PASS",
+    "verification_source_sha256": "98391735cc929d215fa7cc046e8ccd42ba68f9c33e9919193d0f973a3de2ad06",
+    "pending_wrapper": true,
+    "negative_control": false,
+    "target": {
+      "bytes": 524288,
+      "crc32": "b9ba49b9",
+      "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+      "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+      "wpc_checksum": "0F05"
+    },
+    "reference_sha1": "16e83bc01c452781150275a0e88a71072cf9bc43",
+    "fixture_sha256": "4831d7c9c9f64acd4928be234708409bc6261d20e16f8869dfd1ece958a639dc",
+    "emulator_sha256": "7aa9ea5ccb3239016053d4c06ccba0f5cdf13fae6d482858fa3997b70ed045ea",
+    "profiles": [
+      {
+        "profile": 0,
+        "initial_D": "1234",
+        "initial_CC": "50",
+        "native_phase": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "synthetic_task": 0,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 1,
+        "initial_D": "1234",
+        "initial_CC": "51",
+        "native_phase": [
+          0,
+          128,
+          0,
+          0
+        ],
+        "synthetic_task": 242,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      },
+      {
+        "profile": 2,
+        "initial_D": "A55A",
+        "initial_CC": "FF",
+        "native_phase": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "synthetic_task": 243,
+        "compared_vectors": 65536,
+        "result": "PASS"
+      }
+    ],
+    "compared_vectors": 196608,
+    "guard_invocations": 393216,
+    "qualified_range": [
+      0,
+      255
+    ],
+    "live_range": [
+      0,
+      255
+    ],
+    "checked": [
+      "admission vs reference and independent predicate",
+      "CC including carry/overflow/negative/zero",
+      "D, DP, X, Y, U",
+      "stack pointer at return/continuation",
+      "accepted saved-D stack frame"
+    ],
+    "native_predicate_retained": true,
+    "IRQs_and_FIRQs_masked": true,
+    "scope": "Numeric guard comparison; pending wrapper, when enabled, is identical on both sides and retains native task lookup; not equality to unmodified L5C as a whole",
+    "limits": [
+      "Not cycle-identical; different instruction counts and scratch-stack writes",
+      "No interrupt arrival interleavings or arbitrary corrupt scheduler simulation",
+      "Caller DP=0; normal game contract",
+      "Unit fixture, not gameplay; NEVER BURN"
+    ]
+  },
+  "negative_control": {
+    "result": "PASS: deliberately broken guard detected",
+    "qualified": 1,
+    "live": 1,
+    "successful_pairs_before_detection": 257,
+    "fixture_sha256": "9e30c4bd64ec6a8c3287dbba345f4b5b16bf5db29217229821458bfebca7ee60",
+    "verification_source_sha256": "98391735cc929d215fa7cc046e8ccd42ba68f9c33e9919193d0f973a3de2ad06",
+    "private_report_sha256": "c7411fb4d64a834e84e2e026cb54863a2126839d8d7b674f6c8fb40489188961"
+  },
+  "static_cycle_accounting": {
+    "source": "Pinned PinMAME 6809 cycle table and PSHS/PULS per-byte costs",
+    "scope": "Numeric guard paths; exclude identical callee body",
+    "accepted": {
+      "reference": 49,
+      "KH5": 51,
+      "delta": 2
+    },
+    "reject_unqualified": {
+      "reference": 39,
+      "KH5": 24,
+      "delta": -15
+    },
+    "reject_live_not_one": {
+      "reference": 49,
+      "KH5": 34,
+      "delta": -15
+    },
+    "CPU_Hz": 2000000
+  },
+  "rom_changed": false
+}

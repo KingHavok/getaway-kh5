@@ -42,3 +42,48 @@ repeated entries. KH5 has separate native guard and A1/A3/B3/A12 replay evidence
 720-row multiplayer matrix belongs to G6, not KH5. Progressive super jackpots are
 retained; no new arbitrary scoring cap is imposed. The final mixed G6 tests verify
 award progression and no restart, not every monetary payout under every setting.
+
+## Direct comparison with Soren's numeric guard
+
+On 9 November 2026, an additional native 6809 differential test compared the
+rewritten routine with the 28-byte reference extracted locally from an owner's
+hash-verified L5C image. No reference routine or fixture ROM is distributed.
+
+All 256 qualification-byte values were crossed with all 256 live-ball-byte
+values, including high-bit values, zero, and the decrement's signed-overflow and
+wraparound boundaries. Eight caller-D/CC/native-phase profiles produced
+**524,288 passing comparisons**. A further **196,608 comparisons** put both
+numeric implementations behind the same KH5 wrapper, with absent, pending-F2
+and running-F3 task states. Both sets passed with no mismatches.
+
+The comparison checks admission against the reference and an independent
+predicate, CC, D, DP, X, Y, U, stack pointer, and the accepted saved-D frame. It
+retains the real native `6EC6` predicate and, for wrapper tests, the real task
+lookup. Synthetic inputs are read back before execution. A deliberately broken
+candidate is detected at qualified=1/live=1, proving the comparator flags an
+admission mismatch. [Numeric evidence](../../evidence/guard-equivalence.json)
+records the exact scope and input/fixture/tool hashes.
+
+This establishes the tested functional contract, not cycle identity. From the
+pinned 6809 core's cycle table and push/pull byte costs, the rewrite adds two
+cycles on admission and saves fifteen on either numeric rejection path. At
+2 MHz those differences are +1 microsecond and -7.5 microseconds respectively.
+Unused stack bytes and internal return addresses also differ. IRQ/FIRQ are
+masked in these isolated fixtures, the caller uses normal DP=0, and the eight
+register/flag profiles do not enumerate every CPU state or interrupt arrival.
+
+The pending-F2 exclusion is an intentional KH5 addition. Comparing both guards
+behind that same wrapper tests the rewrite's compatibility with it; it does not
+claim that KH5 and unmodified L5C have identical rules in every state.
+
+To repeat the differential test, supply your own KH5, L5C reference and U18:
+
+```sh
+python3 tools/compare_guards.py --emulator /private/path/sdl3pinmame \
+  --rom /private/path/getaway_kh5.bin --reference /private/path/getaway_l5c.bin \
+  --sound /private/path/u18snd --output /private/path/guard-comparison
+```
+
+Use `--pending-wrapper` in a fresh output directory for the task-state comparison,
+or `--negative-control` for the deliberate-fault check. All generated fixtures
+are private **UNIT_ONLY_NEVER_BURN** images; they are not playable releases.

@@ -1,15 +1,86 @@
-# Getaway KH5
+# The Getaway: High Speed II — KH5
 
-**KingHavok's improved L5 game-ROM patch for Williams The Getaway: High Speed II.**
-The machine displays **KH5**: the two initials replace the old revision letter and
-hyphen in the existing field. This is an unofficial project, not a Williams/PPS release.
+**Fixing reproduced bugs, restoring original features and adding LED support to
+Williams' 1992 Getaway, built on official L5.**
 
-This repository distributes a converter, a small IPS patch, added patch source,
-original research notes and numeric test summaries. **It contains no game or sound
-ROM, DMD artwork, audio, emulator executable, NVRAM image or debugger RAM dump.**
-You must obtain and retain your own authorized official L5 U6 image.
+The aim of KH5 is to bring together the most complete and reliable version of the
+original Getaway experience: L5's later improvements, the missing **Run the Red
+Light** sequence, **Secret Mania** with its confirmed state bugs corrected, and
+fixes for multiball interactions that can reset progress or steal a mode. The original
+rules, scoring progression, artwork, music and sound remain at the heart of it.
 
-## Build locally
+This started with research into decades of owner reports, ROM-version differences
+and earlier community fixes. We worked through those reports, attempted to
+reproduce them against official ROMs in PinMAME, traced demonstrated failures in
+the 6809 code, and tested the fixes against the same scenarios. That process also
+separated actual defects from normal rules, mechanical faults and reports we
+could not reproduce. The [bug catalogue](docs/bugs.md) records the outcome for
+each lead; the [technical notes](docs/changes.md) explain what changed and why.
+
+## What KH5 improves
+
+- **Multiball stays in progress.** Prevent repeated Hideout arrivals from starting
+  ordinary multiball again and resetting jackpot/super-jackpot progression.
+- **Protect Redline Mania startup.** Correct the drain-during-introduction race
+  and exclude a competing ordinary-multiball start while Redline is pending.
+  Preserve intended single-ball Getaway Time locks afterward.
+- **Restore Run the Red Light.** Bring back the original word-by-word display and
+  sound sequence using the routine still present in L5.
+- **Keep Secret Mania working.** Retain the full mode and its nine-target
+  extra-ball challenge; protect the traffic-light backup from repeated shifter
+  pulls and restore it through tilt cleanup.
+- **Restore native SLOW Game Re-Start.** Correct the Start-button edge so the
+  existing hold-to-restart option can work.
+- **Support matrix LEDs.** Apply wpclp's standard V2 anti-ghosting transformation,
+  verified byte-for-byte against freshly compiled wpclp 1.4.
+- **Correct diverter PWM cancellation.** Clear the timer and high-power latch
+  together, addressing a defect found during the mechanism and coil investigation.
+- **Allow Burn Rubber multiball to be disabled.** Permit zero as the minimum for
+  the existing multiball-percentage adjustment, without changing its default.
+
+L5's independent upper and lower right flippers, capped single-ball Supercharger
+award and corrected Free Ride behaviour are retained. U18 sound is unchanged.
+[Every patch is documented](docs/changes.md), including its addresses, cause,
+reproduction and added assembly.
+
+## Research and testing
+
+The development campaign exercised
+multiplayer lock ownership, different balls-per-game and timing settings,
+interleaved multiballs, extra balls, tilt and restart, missing balls, stuck
+switches, failed mechanisms, ball search and slow balls trapped beneath the
+Donut Shop ramp. It also measured commanded coil pulses and checked recovery
+after injected faults were removed.
+
+| Test group | Completed coverage | Image / scope |
+|---|---|---|
+| Multiball and settings matrix | 720 configuration rows plus 3 slow variants | G6 predecessor and official controls |
+| Device faults | 74 records | G6 predecessor and official controls |
+| Under-Donut-ramp recovery | 56 records | G6 predecessor and official controls |
+| Endurance | 60 records, plus separate evidence covering 1,200 ordinary/continuous turns | Predecessor campaign |
+| Final feature and settings gate | 12 accepted contracts, including multiplayer, five-ball extended timings, extra balls, Specials and video awards | G6 predecessor |
+| KH5 gameplay regressions | 12 targeted replays with the emulated sound CPU enabled | Exact KH5 release |
+| KH5 native guard checks | 48 cases covering admission, pending/running Redline, D and stack | Exact KH5 code in unit fixtures |
+| Direct guard comparison | 524,288 counter/register/flag vectors, plus 196,608 with the pending-mode wrapper | Native unit fixtures comparing KH5 code with the L5C numeric guard |
+| LED equivalence | Complete LED-only output identical to wpclp; zero differences in KH5's 139-byte driver region | Exact KH5 release |
+| Boot and conversion | Native ROM checksum passes; baseline, source reconstruction and final image hashes verified | Exact KH5 release |
+
+The 913 records in the main historical campaign are [listed individually](evidence/historical-g6-cases.json).
+G6 is the private predecessor to KH5. Its results retain the tested image
+identity; the current KH5 checks are listed separately. See the
+[test methodology](docs/testing.md) and [results summary](evidence/summary.json)
+for the scope, controls, failures investigated and reproduction tools.
+
+All listed release checks pass in emulation. Hardware validation is still pending.
+The separate permanent-lockout report and some gear-loss reports remain
+unreproduced; the reproduced temporary third-gear pause was closed as inferred
+expected Getaway/RPM-gate behaviour. These are recorded openly in the catalogue.
+
+## Build your own image
+
+You supply your own authorized **official L5 U6 ROM**. The repository provides the
+converter, authored patch, source and documentation; game and sound ROMs are not
+distributed here.
 
 Python 3.10 or newer; standard library only. Unzip your own raw U6 first:
 
@@ -49,39 +120,17 @@ baseline's original byte ranges. LED relocation and checksum operations are
 explained in [the LED notes](docs/changes/led.md) and converter source; every final
 changed byte, including those operations, appears in the locally generated log.
 
-## Changes
+## Revision and provenance
 
-- Prevent ordinary multiball from restarting on jackpot/Hideout arrivals.
-- Protect pending Redline startup from an immediate drain and a competing third lock.
-- Keep **Secret Mania**, including its nine-target extra-ball challenge; protect its
-  first traffic-light backup and restore it through native tilt cleanup.
-- Fix the Start-button edge that prevented native **SLOW Game Re-Start**.
-- Restore the resident **Run the Red Light** effect; no L2 graphics/code are imported.
-- Apply the supported **LED lamp-matrix ordering** correction.
-- Stop the Supercharger diverter PWM timer and high-power latch atomically.
-- Allow a zero minimum for the existing Burn Rubber multiball percentage adjustment.
+**KH5** identifies KingHavok's improved L5 project. The existing revision field
+shows `REV. KH5`; the native checksum is `0F05`. This is an unofficial release.
+The field-format detail is in [the branding notes](docs/changes/branding.md).
 
-L5's independent right flippers, capped single-ball Supercharger rule, ordinary
-Getaway/lock behavior and U18 sound are retained. No arbitrary Super Jackpot cap
-is added. [Technical change index](docs/changes.md) links each change to its
-cause, reproduction, addresses, assembly and tests.
-
-## Evidence and limits
-
-Read [testing](docs/testing.md), [the complete bug catalogue](docs/bugs.md),
-[history](docs/history.md) and [machine-readable evidence](evidence/summary.json).
-A [direct comparison with freshly compiled wpclp 1.4](evidence/led-equivalence.json)
-confirmed identical LED-only output and zero differences in KH5's lamp-driver region.
-The large historical campaign ran on the private G6 predecessor. KH5 changes its
-numeric guard implementation and branding; **historical G6 runs are not counted
-as executions of KH5**. The release metadata and summary distinguish those runs
-from KH5's native checksum, guard and targeted gameplay tests.
-
-Emulation does not establish real ramp clearance, driver condition, current,
-temperature, physical LED ghosting or audible sound. No hardware trial is claimed.
-A separate permanent-lockout report remains unreproduced. The reproduced temporary
-third-gear pause was closed as **inferred expected Getaway/RPM-gate behavior**,
-not as proof that every historical third-gear report has been explained.
+The public source includes [annotated assembly](patches/kh5.asm), an
+[authored byte table](patches/changed-bytes.csv), original research notes and
+reproducible test inputs. The detailed before/after log is generated locally from
+the owner's ROM. [Credits and licences](NOTICE.md) identify Soren,
+John Honeycutt/wpclp, PinMAME and the other work that informed this project.
 
 ## Development and publication
 
@@ -92,7 +141,6 @@ python3 tools/check_public_tree.py
 
 An optional local integration test uses `KH5_BASELINE=/private/path/GETAW_L5.ROM`.
 CI has no ROM secret, never fetches game ROMs and never uploads game artifacts.
-[Publication policy](docs/publication.md) explains the allowlist and the limits of
-what a ROM-free repository establishes. [Credits and licenses](NOTICE.md) identify
-Soren, John Honeycutt/wpclp, PinMAME and the distinction between project code and
-the proprietary game. Repository licensing grants no rights to the game ROM.
+The [publication policy](docs/publication.md) describes the audited file boundary.
+No DMD captures, audio, emulator executables, NVRAM or debugger dumps are included.
+Repository licensing grants no rights to the proprietary game ROM.

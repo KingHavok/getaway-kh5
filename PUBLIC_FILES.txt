@@ -21,6 +21,7 @@ docs/history.md
 docs/publication.md
 docs/sources.md
 docs/testing.md
+evidence/guard-equivalence.json
 evidence/historical-g6-cases.json
 evidence/led-equivalence.json
 evidence/summary.json
@@ -52,6 +53,7 @@ tests/test_conversion.py
 tools/build_pinmame.py
 tools/check_guard.py
 tools/check_public_tree.py
+tools/compare_guards.py
 tools/pinmame-instrumentation.patch
 tools/pinmame/CONTRIBUTIONS-LICENSE.txt
 tools/pinmame/UPSTREAM-LICENSE.txt

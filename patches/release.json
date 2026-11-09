@@ -33,7 +33,10 @@
     "public_build_reproduced": true,
     "public_gameplay_smoke_passed": 1,
     "hardware_tested": false,
-    "historical_G6_separate": true
+    "historical_G6_separate": true,
+    "numeric_guard_differential_vectors": 524288,
+    "pending_wrapper_differential_vectors": 196608,
+    "guard_differential_mismatches": 0
   },
   "patch_file": "patches/L5-to-KH5-gameplay.ips",
   "patch_changed_bytes": 116,

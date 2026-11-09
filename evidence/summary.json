@@ -496,5 +496,16 @@
     "led_changed_bytes": 67,
     "record": "led-equivalence.json",
     "kh5_unchanged": true
+  },
+  "numeric_guard_direct_comparison": {
+    "result": "PASS",
+    "numeric_vectors": 524288,
+    "pending_wrapper_vectors": 196608,
+    "mismatches": 0,
+    "negative_control": "PASS: deliberately broken candidate detected",
+    "reference": "Owner-supplied L5C numeric guard",
+    "cycle_identical": false,
+    "record": "guard-equivalence.json",
+    "scope": "Native unit fixtures with IRQ/FIRQ masked; full counter bytes in documented register/flag/task profiles; no ROM changes"
   }
 }
