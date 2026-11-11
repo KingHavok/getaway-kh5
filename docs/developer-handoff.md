@@ -7,6 +7,11 @@ emulator binary is required. This guide is the entry point for continuing bug
 research or creating a new candidate; [the test catalogue](test-catalogue.md)
 explains which generators to choose.
 
+A [fresh remote-clone check](fresh-clone-validation.md) verified exact KH5
+reconstruction, a new public-source emulator build and the listed short regression
+set using only L5/U18 as supplied ROM inputs, with private-workspace reads blocked.
+Its scope and numeric results are recorded separately from historical campaigns.
+
 ## Start with a private lab
 
 Use Python 3.10+, Git, CMake, a C/C++ compiler and SDL3 development headers/library.

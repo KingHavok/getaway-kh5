@@ -19,6 +19,7 @@ docs/changes/redline.md
 docs/changes/restart.md
 docs/changes/secret-mania.md
 docs/developer-handoff.md
+docs/fresh-clone-validation.md
 docs/history.md
 docs/port-validation.md
 docs/publication.md
@@ -28,6 +29,7 @@ docs/test-catalogue.md
 docs/testing.md
 evidence/audit-reconstruction-20261111.json
 evidence/developer-lab-20261111.json
+evidence/fresh-clone-20261111.json
 evidence/guard-equivalence.json
 evidence/guard-interrupts.json
 evidence/historical-g6-cases.json

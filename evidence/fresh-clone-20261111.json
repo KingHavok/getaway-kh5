@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-11",
+  "result": "PASS",
+  "scope": "Fresh remote-clone reconstruction and bounded native regression set; separate from earlier port/historical campaigns",
+  "tested_public_repository": "https://github.com/KingHavok/getaway-kh5.git",
+  "tested_public_commit": "260841bb00eb898393fc67d946939fb1f7542cc4",
+  "clone_tracked_changes": false,
+  "code_or_oracle_changes_needed": false,
+  "source_receipt_created_UTC": "2026-11-11T09:42:08.337124+00:00",
+  "input_identities": {
+    "L5.u6": {
+      "bytes": 524288,
+      "sha1": "c87c36a2327561c50b37d587d3bd0782acf8860d",
+      "sha256": "c9015339fb0312eb84a580cc4f32de41b70c78931fad2cda515a28c6d4d0f0ac"
+    },
+    "u18snd": {
+      "bytes": 524288,
+      "sha1": "e6b7ccef250db0c801e3dd8ebf93522b466ca1ec",
+      "sha256": "d4a8847d960b680cd05cdca6f90b916fd27b7e4abcacbbbad2e77316632ac143"
+    }
+  },
+  "KH5_output": {
+    "bytes": 524288,
+    "crc32": "b9ba49b9",
+    "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+    "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+    "wpc_checksum": "0F05"
+  },
+  "build": {
+    "result": "PASS",
+    "public_helper": "tools/build_pinmame.py via tools/lab.py build",
+    "local_source_option_used": false,
+    "upstream_repository": "https://github.com/vpinball/pinmame.git",
+    "upstream_commit": "47ac466023e488e1cbeb19448fa3f56ff9cc8788",
+    "instrumentation_patch_sha256": "9095564c6208e29ddaa3499ed5447aa86be034ecf646fb96b1ed51287868edd7",
+    "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+    "jobs": 2,
+    "compiler_cache_disabled": true,
+    "private_build_log_sha256": "b0a44ce492e5418211c3f9ee9eae11ef49b815f89573fcca13ff62856f928a56"
+  },
+  "environment": {
+    "platform": "macOS-26.6.2-x86_64-i386-64bit-Mach-O",
+    "python": "3.15.2 (main, Oct 25 2026, 16:57:51) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "normal_installed_compiler_CMake_and_SDL3_used": true,
+    "clean_process_environment": true,
+    "clean_child_home": true,
+    "python_user_site_disabled": true,
+    "any_probed_system_PinMAME_config_present": false,
+    "standard_system_PinMAME_config_files_probed": 2
+  },
+  "isolation": {
+    "method": "macOS child-process sandbox denied reads of the original private workspace; permission-denial probes before and after the run",
+    "private_workspace_read_denial": "PASS",
+    "private_workspace_paths_published": false,
+    "private_helpers_used": false,
+    "private_emulator_or_source_reused": false,
+    "private_NVRAM_imported": false,
+    "additional_reference_ROMs_supplied": false,
+    "isolation_profile_sha256": "6e50ac6c4ad8b2ac4f4cf91de00cf8d1c79cda37086a9da5ebeae0dc4b76f4b1",
+    "fresh_native_seed_sha256": "21c24a1c34d66ae03026d615cdd0a4a7305f6de2d00f61fa23a15c3fb3320143",
+    "all_conversion_build_and_test_logic": "Unmodified cloned public tools; shell only sequenced commands"
+  },
+  "native_checks": {
+    "units_and_checksum": [
+      {
+        "name": "calibration",
+        "result": "PASS",
+        "frames": 20,
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "13923df2bebb4e6d576b65e5ae10480ae67c5b2cfe85c7a997a4631e0a8effe1",
+        "contract": "Independent synthetic CPU calibration; no KH5 game program executed",
+        "selected_game_firmware_executed": false,
+        "sensor_read_checks": 9,
+        "expected_pulse_seconds": 0.0005045,
+        "observed_pulse_seconds": [
+          0.0005045000000000001,
+          0.0005045
+        ],
+        "fixture_is_burn_image": false
+      },
+      {
+        "name": "boot",
+        "result": "PASS",
+        "frames": 0,
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "7b4fb633ce7957ca4e844285cf1b0f576031fcfcf550d3df95e5341ec20ddcd2",
+        "contract": "Actual native KH5 reset checksum computation and zero-difference success branch",
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "native_checksum": "0F05",
+        "success_PC": "8D30",
+        "checksum_bypassed": false,
+        "frame_count_note": "Zero bounded frames: uses debugger resume and native breakpoints, not a skipped test"
+      },
+      {
+        "name": "pwm-unit",
+        "result": "PASS",
+        "frames": 120,
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "a4f99419cc29972d46354eadf511ae2e1eb3b338f5e38654ba9bbfde0e3befdc",
+        "contract": "Native authored PWM stop-hook CPU vectors; not a gameplay or interrupt-injection campaign",
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "vectors": 8192,
+        "shadow_values": 256,
+        "condition_code_values": 8,
+        "timer_values": 4,
+        "fixture_is_burn_image": false
+      }
+    ],
+    "gameplay": [
+      {
+        "name": "core_a1_cold",
+        "result": "PASS",
+        "frames": 16270,
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "cb1a7a49eec8ddda51901160353d44607ef50120936c9189b703490c9c689eda",
+        "source_nvram_unchanged": true,
+        "test_source_sha256": "7d1f48c961fb43965ace18f86bda57b158d3146da0a7f186805c9f70a203d543",
+        "session_source_sha256": "6ea4c1a5fb7aadcf2c5903a0d41ba051a5ba288ba464719a52fdf58f7b9a73cd",
+        "script_sha256": "5d7c96ade94016933320dc962b7938b622a9bbbebd626d0847065d36ec2d1cfd",
+        "oracle_checked": true,
+        "script": "tests/scenarios/core_a1_cold.json",
+        "contract": "Published lock/jackpot sequence: state and native callback oracles, plus ordered red-light display mask hashes",
+        "fresh_emulator_process": true,
+        "sound_CPU_enabled": true,
+        "native_initialized_seed": true,
+        "memory_assertions_passed": 3,
+        "display_check": {
+          "result": "PASS",
+          "method": "Ordered hashes of private, freshly captured pixel masks; no pixels published",
+          "matched_words": [
+            "RUN",
+            "THE",
+            "RED",
+            "LIGHT",
+            "RUN THE / RED LIGHT"
+          ],
+          "matched_frame_indices": [
+            60,
+            81,
+            102,
+            124,
+            169
+          ],
+          "capture_frames": 906
+        }
+      },
+      {
+        "name": "core_a9_immediate_expiry",
+        "result": "PASS",
+        "frames": 19372,
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "9b3d4e179ba48846a4fe4e2dd4d109e9f58917446515a68be9e3c811843655b5",
+        "source_nvram_unchanged": true,
+        "test_source_sha256": "7d1f48c961fb43965ace18f86bda57b158d3146da0a7f186805c9f70a203d543",
+        "session_source_sha256": "6ea4c1a5fb7aadcf2c5903a0d41ba051a5ba288ba464719a52fdf58f7b9a73cd",
+        "script_sha256": "5412e54c1da57bca55b16e4c69834f5d27417dc0091b9599dc842eba7c0e1cf6",
+        "oracle_checked": true,
+        "script": "tests/scenarios/core_a9_immediate_expiry.json",
+        "contract": "Published pending-Redline introduction drain/saver-expiry race sequence: memory assertions and scalar/native-count oracle",
+        "fresh_emulator_process": true,
+        "sound_CPU_enabled": true,
+        "native_initialized_seed": true,
+        "memory_assertions_passed": 11
+      },
+      {
+        "name": "core_b3_intro_overlap",
+        "result": "PASS",
+        "frames": 15034,
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "f97a1c4f91e4c7a0d7717266c988a300deea372fba2dd9a0279e6199938ac4a5",
+        "source_nvram_unchanged": true,
+        "test_source_sha256": "7d1f48c961fb43965ace18f86bda57b158d3146da0a7f186805c9f70a203d543",
+        "session_source_sha256": "6ea4c1a5fb7aadcf2c5903a0d41ba051a5ba288ba464719a52fdf58f7b9a73cd",
+        "script_sha256": "ef64f143af7b1668b10ba31ab19b2cdbb16c988d858f1131c9a24a4b8edc272d",
+        "oracle_checked": true,
+        "script": "tests/scenarios/core_b3_intro_overlap.json",
+        "contract": "Published ordinary-lock/Redline pending-introduction overlap: memory assertions and scalar/native-count oracle",
+        "fresh_emulator_process": true,
+        "sound_CPU_enabled": true,
+        "native_initialized_seed": true,
+        "memory_assertions_passed": 5
+      },
+      {
+        "name": "secret_tilt",
+        "result": "PASS",
+        "frames": 4972,
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "9bd5df4346032e07278c96cef4c7d949f4eb8b78190047dece2324fa420dd975",
+        "source_nvram_unchanged": true,
+        "test_source_sha256": "7d1f48c961fb43965ace18f86bda57b158d3146da0a7f186805c9f70a203d543",
+        "session_source_sha256": "6ea4c1a5fb7aadcf2c5903a0d41ba051a5ba288ba464719a52fdf58f7b9a73cd",
+        "script_sha256": "8357033e40b0e340eb1e62a73df1fdcc414ee4f607dd68bd8dc9c8f119d75bde",
+        "oracle_checked": true,
+        "script": "tests/scenarios/secret_tilt.json",
+        "contract": "Published Secret Mania tilt-cleanup sequence: memory assertions and scalar/native-count oracle",
+        "fresh_emulator_process": true,
+        "sound_CPU_enabled": true,
+        "native_initialized_seed": true,
+        "memory_assertions_passed": 3
+      },
+      {
+        "name": "core_f1_slow",
+        "result": "PASS",
+        "frames": 5682,
+        "image_sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+        "emulator_sha256": "70c1bd0553c4439f05ad81fb3bee42d3aff61f7036a4a9d6e06563732509c513",
+        "result_record_sha256": "efad5c29a965f97574f94e67de727d09fa292978f44dc739b254c7d9dd9a9f37",
+        "source_nvram_unchanged": true,
+        "test_source_sha256": "7d1f48c961fb43965ace18f86bda57b158d3146da0a7f186805c9f70a203d543",
+        "session_source_sha256": "6ea4c1a5fb7aadcf2c5903a0d41ba051a5ba288ba464719a52fdf58f7b9a73cd",
+        "script_sha256": "502fe08d700b11a4b1557affb68c0e72e84594f347b5d1cf290734a07eee655b",
+        "oracle_checked": true,
+        "script": "tests/scenarios/core_f1_slow.json",
+        "contract": "Published native SLOW Game Re-Start sequence: memory assertions and scalar/native-count oracle",
+        "fresh_emulator_process": true,
+        "sound_CPU_enabled": true,
+        "native_initialized_seed": true,
+        "memory_assertions_passed": 14
+      }
+    ],
+    "total_records": 8,
+    "gameplay_records": 5,
+    "gameplay_frames": 61330,
+    "frame_scope": "Gameplay budgets only; excludes initialization and unit execution; not wall-clock duration"
+  },
+  "as_tested_publication_checks": {
+    "result": "PASS",
+    "public_files": 175,
+    "reachable_blobs_checked": 200,
+    "scope": "These counts describe tested commit 260841b, not the later documentation commit",
+    "owner_payload": {
+      "result": "PASS",
+      "L5_checked": true,
+      "U18_checked": true,
+      "L5C_reference_checked": false,
+      "nontrivial_96_byte_game_sound_matches": 0,
+      "unchanged_IPS_carrier_bytes": 0,
+      "authored_payload_bytes": 116
+    }
+  },
+  "privacy": {
+    "published": "Original prose, input/output identities, derived counts, outcomes and evidence hashes only",
+    "kept_private": [
+      "Original L5 and U18 inputs",
+      "Generated KH5 and CPU-unit fixture images",
+      "Emulator executable and build objects",
+      "NVRAM, RAM/CPU traces, action/output logs and DMD captures",
+      "Local paths, actual sandbox profile and raw receipts"
+    ]
+  },
+  "limitations": [
+    "Existing macOS toolchain/SDL3 installation used; not a bare-OS or cross-platform installation test",
+    "Only five of the twelve release gameplay replays ran; the full 913/128 catalogues and broader feature/fault/settings campaigns were not emulated here",
+    "No L5C/wpclp reference comparison or guard interrupt-injection campaign was rerun",
+    "All five gameplay replays targeted KH5; no official-L5 gameplay negative control was rerun",
+    "No physical hardware qualification, new firmware change, or universal bug-free claim"
+  ],
+  "python_checks": {
+    "ROM_free": {
+      "discovered": 27,
+      "passed": 25,
+      "skipped": 2,
+      "result": "PASS"
+    },
+    "with_owned_L5": {
+      "discovered": 27,
+      "passed": 27,
+      "skipped": 0,
+      "result": "PASS"
+    },
+    "note": "Two executions of the same suite, not 52 distinct checks"
+  }
+}

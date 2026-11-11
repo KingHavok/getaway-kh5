@@ -133,3 +133,13 @@ The [handoff guide](developer-handoff.md) and [runnable catalogue](test-catalogu
 now expose the authored historical generators, native initialization and explicit
 candidate workflow. The [port checks](port-validation.md) are new, image-bound
 validation of that harness; they do not relabel historical G6 passes as KH5 passes.
+
+## Fresh remote-clone check
+
+The [11 November fresh-clone verification](fresh-clone-validation.md) tested
+unmodified public commit `260841b` with only the owner's L5/U18 ROM inputs. Exact
+KH5 reconstruction, a new upstream-source emulator build, 27 owned-input Python
+checks, three native unit/checksum checks and five named gameplay replays passed.
+The [numeric record](../evidence/fresh-clone-20261111.json) keeps this bounded run
+separate from the earlier port and historical evidence; no raw artifacts are
+published and no full-catalogue or hardware pass is implied.
