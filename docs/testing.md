@@ -126,3 +126,10 @@ those historical runs cannot be independently reconstructed from a hash alone.
 The provided source, inputs and scalar oracles support fresh local execution with
 an owner's own binaries. They do not claim exhaustive coverage, all historical
 reports fixed, every monetary jackpot total checked, or a hardware-tested release.
+
+## Portable developer lab
+
+The [handoff guide](developer-handoff.md) and [runnable catalogue](test-catalogue.md)
+now expose the authored historical generators, native initialization and explicit
+candidate workflow. The [port checks](port-validation.md) are new, image-bound
+validation of that harness; they do not relabel historical G6 passes as KH5 passes.

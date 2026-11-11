@@ -1,0 +1,356 @@
+[
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "56C6",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "5200",
+      "bank": "2B"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6098",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/breakpoints",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6091",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "537A",
+      "bank": "2B"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6253",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6011",
+      "bank": "2A"
+    }
+  },
+  {
+    "frames": 1200
+  },
+  {
+    "path": "/api/debugger/memory/write",
+    "params": {
+      "addr": "3FFD",
+      "data": "B4"
+    }
+  },
+  {
+    "path": "/api/debugger/memory/write",
+    "params": {
+      "addr": "1B9D",
+      "data": "0001"
+    }
+  },
+  {
+    "path": "/api/debugger/memory/write",
+    "params": {
+      "addr": "3FFD",
+      "data": "00"
+    }
+  },
+  {
+    "assert_memory": {
+      "addr": "1B9D",
+      "data": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 0
+    }
+  },
+  {
+    "frames": 30
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 0
+    }
+  },
+  {
+    "frames": 30
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "200",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "200",
+      "val": 0
+    }
+  },
+  {
+    "frames": 30
+  },
+  {
+    "frames": 240
+  },
+  {
+    "assert_memory": {
+      "addr": "008C",
+      "data": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "8000"
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0032.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0033.ppm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/info",
+    "params": {}
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 112,
+      "val": 1,
+      "pulse": 500
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/info",
+    "params": {}
+  },
+  {
+    "wait": 0.7
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/info",
+    "params": {}
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 116,
+      "val": 1,
+      "pulse": 500
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/info",
+    "params": {}
+  },
+  {
+    "wait": 0.7
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/info",
+    "params": {}
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "400",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0065.pgm"
+  },
+  {
+    "path": "/api/info",
+    "params": {}
+  }
+]

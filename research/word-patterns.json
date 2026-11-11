@@ -1,0 +1,32 @@
+{
+  "source_sha256": "1347af210218c95ed5ca86ad2b91c599b8920226c846fd60e43388d19557fe8e",
+  "normalization": "Foreground is every pixel differing from the most common background intensity",
+  "patterns": [
+    {
+      "word": "RUN",
+      "reference_frame": 70,
+      "mask_sha256": "e8273a02bf3725eb2b970d7917c95f9d0172dd5b5a0f4f37ba60ca1380d4b3a4"
+    },
+    {
+      "word": "THE",
+      "reference_frame": 90,
+      "mask_sha256": "120736d6f87ee0dd76f6f4e62e4d61d715e18caffdceb800f3bbbaac3def191f"
+    },
+    {
+      "word": "RED",
+      "reference_frame": 120,
+      "mask_sha256": "57af4d5b3565fb07dcbbae5c5ae9ce667dfd199018fadaf4aede4c424d592bcb"
+    },
+    {
+      "word": "LIGHT",
+      "reference_frame": 130,
+      "mask_sha256": "918779007d3c28bc78c002578fa2d2f0bf14837fbec9c030dedd2d71d47072c6"
+    },
+    {
+      "word": "RUN THE / RED LIGHT",
+      "reference_frame": 170,
+      "mask_sha256": "39bd2142846b23a12273aa8661244788755985f7376f84cdf7ffc11da9ef7781"
+    }
+  ],
+  "scope": "Historical reference mask hashes only; no pixels/fonts/assets distributed"
+}

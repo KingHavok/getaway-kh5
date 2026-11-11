@@ -1,0 +1,1608 @@
+[
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "56C6",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "5200",
+      "bank": "2B"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6098",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/breakpoints",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6091",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "537A",
+      "bank": "2B"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6253",
+      "bank": "2A"
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {
+      "cmd": "add",
+      "addr": "6011",
+      "bank": "2A"
+    }
+  },
+  {
+    "frames": 1200
+  },
+  {
+    "path": "/api/debugger/memory/write",
+    "params": {
+      "addr": "3FFD",
+      "data": "B4"
+    }
+  },
+  {
+    "path": "/api/debugger/memory/write",
+    "params": {
+      "addr": "1B9D",
+      "data": "0001"
+    }
+  },
+  {
+    "path": "/api/debugger/memory/write",
+    "params": {
+      "addr": "3FFD",
+      "data": "00"
+    }
+  },
+  {
+    "assert_memory": {
+      "addr": "1B9D",
+      "data": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 0
+    }
+  },
+  {
+    "frames": 30
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "1",
+      "val": 0
+    }
+  },
+  {
+    "frames": 30
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "200",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "200",
+      "val": 0
+    }
+  },
+  {
+    "frames": 30
+  },
+  {
+    "frames": 240
+  },
+  {
+    "assert_memory": {
+      "addr": "008C",
+      "data": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "8000"
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0032.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0033.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 51,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 51,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 52,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 52,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 53,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 53,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 41,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 41,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 42,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 42,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 43,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 43,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 36,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 36,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 37,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 37,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 38,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 38,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0072.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0073.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0080.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0081.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "400"
+    }
+  },
+  {
+    "frames": 1
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 1
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "8000"
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 51,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 51,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 52,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 52,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 53,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 53,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 41,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 41,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 42,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 42,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 43,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 43,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 36,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 36,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 37,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 37,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 38,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 38,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0128.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0129.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0136.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0137.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "400"
+    }
+  },
+  {
+    "frames": 1
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 1
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "8000"
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 1,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 51,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 51,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 52,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 52,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 53,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 53,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 41,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 41,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 42,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 42,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 43,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 43,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 36,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 36,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 37,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 37,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 38,
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input",
+    "params": {
+      "sw": 38,
+      "val": 0
+    }
+  },
+  {
+    "frames": 24
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0184.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0185.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/monitor",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/monitor",
+    "params": {
+      "cmd": "add",
+      "type": "sw",
+      "id": 74
+    }
+  },
+  {
+    "path": "/api/monitor",
+    "params": {
+      "cmd": "add",
+      "type": "sw",
+      "id": 75
+    }
+  },
+  {
+    "path": "/api/monitor",
+    "params": {
+      "cmd": "add",
+      "type": "sw",
+      "id": 76
+    }
+  },
+  {
+    "path": "/api/monitor",
+    "params": {
+      "cmd": "add",
+      "type": "sol",
+      "id": 4
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "start"
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0199.pgm"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0200.ppm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument",
+    "params": {}
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "stop"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec/data",
+    "save": "captures/0204.bin"
+  },
+  {
+    "path": "/api/monitor/log",
+    "save": "captures/0205.json"
+  },
+  {
+    "frames": 600
+  },
+  {
+    "path": "/api/debugger/instrument"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 600
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0213.pgm"
+  },
+  {
+    "path": "/api/lamps",
+    "save": "captures/0214.json"
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "start"
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0221.pgm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0224.ppm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0229.pgm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0232.ppm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 240
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0237.pgm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument"
+  },
+  {
+    "path": "/api/screenshot/pnm",
+    "save": "captures/0240.ppm"
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "stop"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec/data",
+    "save": "captures/0242.bin"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0247.pgm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0252.pgm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0257.pgm"
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "start"
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 300
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 300
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 300
+  },
+  {
+    "frames": 600
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "stop"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec/data",
+    "save": "captures/0274.bin"
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0275.pgm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument"
+  },
+  {
+    "path": "/api/lamps",
+    "save": "captures/0278.json"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0283.pgm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0288.pgm"
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "5"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 900
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0293.pgm"
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "clear"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "start"
+    }
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 300
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 300
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "6"
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/port",
+    "params": {
+      "port": 4,
+      "val": "0"
+    }
+  },
+  {
+    "frames": 300
+  },
+  {
+    "frames": 600
+  },
+  {
+    "path": "/api/debugger/dmdrec",
+    "params": {
+      "cmd": "stop"
+    }
+  },
+  {
+    "path": "/api/debugger/dmdrec/data",
+    "save": "captures/0310.bin"
+  },
+  {
+    "path": "/api/dmd/pnm",
+    "save": "captures/0311.pgm"
+  },
+  {
+    "path": "/api/debugger/memory",
+    "params": {
+      "addr": "0800",
+      "size": 32
+    }
+  },
+  {
+    "path": "/api/debugger/instrument"
+  },
+  {
+    "path": "/api/lamps",
+    "save": "captures/0314.json"
+  },
+  {
+    "assert_memory": {
+      "addr": "0806",
+      "data": [
+        3
+      ]
+    }
+  }
+]

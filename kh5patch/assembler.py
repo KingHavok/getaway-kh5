@@ -11,7 +11,10 @@ def assemble(path):
     for raw in Path(path).read_text().splitlines():
         line=raw.split(';',1)[0].strip()
         if not line:continue
-        if line.lower().startswith('.org '):pc=number(line.split()[1]);continue
+        if line.lower().startswith('.org '):
+            pc=number(line.split()[1])
+            if not 0x4000<=pc<0x8000:raise ValueError('This reviewed assembler targets bank 2A, CPU 4000..7FFF')
+            continue
         if line.endswith(':'):
             name=line[:-1]
             if name in labels:raise ValueError('Duplicate label')
@@ -20,8 +23,9 @@ def assemble(path):
         if op in ['PSHS','PULS','ORCC','ANDA','BEQ','BNE','BCC'] or arg.startswith('<'):size=2
         elif op in ['DECA','RTS','NOP']:size=1
         elif op=='.WORD':size=2
-        elif op in ['JSR','JMP','LDA','LDX','LDD','STA']:size=3
+        elif op in ['JSR','JMP','LDA','LDX','LDD','STA']:size=2 if op=='LDA' and arg.startswith('#') else 3
         else:raise ValueError(f'Unsupported patch instruction: {line}')
+        if pc<0x4000 or pc+size>0x8000:raise ValueError('Instruction outside bank 2A window')
         rows.append(dict(pc=pc,op=op,arg=arg,size=size));pc+=size
     result=[]
     for row in rows:
@@ -40,8 +44,10 @@ def assemble(path):
         elif arg.startswith('<'):data=bytes([{'STD':0xdd,'LDA':0x96,'STA':0x97}[op],number(arg[1:])])
         else:
             immediate=arg.startswith('#');value=number(arg[1:] if immediate else arg)
-            opcode={'JSR':0xbd,'JMP':0x7e,'LDA':0xb6,'STA':0xb7,'LDX':0x8e,'LDD':0xcc}[op]
-            data=bytes([opcode])+value.to_bytes(2,'big')
+            modes={'JSR':(None,0xbd),'JMP':(None,0x7e),'LDA':(0x86,0xb6),'STA':(None,0xb7),'LDX':(0x8e,0xbe),'LDD':(0xcc,0xfc)}
+            opcode=modes[op][0 if immediate else 1]
+            if opcode is None:raise ValueError('Unsupported immediate operand for '+op)
+            data=bytes([opcode])+value.to_bytes(1 if immediate and op=='LDA' else 2,'big')
         if len(data)!=row['size']:raise ValueError('Assembler size mismatch')
         result.append(dict(row,data=data))
     segments=[]

@@ -30,6 +30,14 @@ def inspect(name,data):
   walk(json.loads(text))
  if re.search(r'(?<![a-zA-Z0-9])[a-fA-F0-9]{96,}(?![a-zA-Z0-9])',text):raise ValueError('Opaque long hex payload needs review: '+name)
 
+def check_index(root,allowed):
+ staged=subprocess.check_output(['git','ls-files','-z'],cwd=root).decode().split('\0')
+ if set(filter(None,staged))!=allowed:raise ValueError('Git index differs from the reviewed allowlist')
+ for name in sorted(allowed):
+  data=subprocess.check_output(['git','show',':'+name],cwd=root)
+  if data!=(root/name).read_bytes():raise ValueError('Staged content differs from reviewed working file: '+name)
+  inspect(name,data)
+
 def main():
  allowed=set((ROOT/'PUBLIC_FILES.txt').read_text().splitlines());actual={str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.relative_to(ROOT).parts and '__pycache__' not in p.relative_to(ROOT).parts}
  if actual!=allowed:raise ValueError('Allowlist mismatch: added='+str(sorted(actual-allowed))+' missing='+str(sorted(allowed-actual)))
@@ -57,8 +65,7 @@ def main():
  if hashlib.sha256(patch).hexdigest()!=metadata['patch_sha256']:raise ValueError('Stage IPS digest mismatch')
  objects=0
  if (ROOT/'.git').exists():
-  staged=subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
-  if set(filter(None,staged))!=allowed:raise ValueError('Git index differs from the reviewed allowlist')
+  check_index(ROOT,allowed)
   history=subprocess.run(['git','rev-list','--objects','--all'],cwd=ROOT,capture_output=True,text=True)
   if history.returncode==0:
    for line in history.stdout.splitlines():

@@ -133,6 +133,17 @@ reproducible test inputs. The detailed before/after log is generated locally fro
 the owner's ROM. [Credits and licences](NOTICE.md) identify Soren,
 John Honeycutt/wpclp, PinMAME and the other work that informed this project.
 
+## Continue development or test another candidate
+
+The [developer handoff](docs/developer-handoff.md) covers a fresh checkout through
+building KH5, compiling the pinned research emulator, creating a separately
+identified candidate and running directed tests. The [runnable catalogue](docs/test-catalogue.md)
+now includes the historical fault/multiball controllers, settings and recovery
+campaigns, 128 synthetic variants and positive feature/award tests. Native tests
+need your own matching U18 as well as L5; no private NVRAM or extracted banks are
+required. [Port validation](docs/port-validation.md) distinguishes newly rerun
+checks from historical results.
+
 ## Development and publication
 
 ```sh

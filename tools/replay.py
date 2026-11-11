@@ -30,24 +30,24 @@ class API:
   while after:n=min(after,600);self.frames(n);after-=n
 
 @contextlib.contextmanager
-def emulator(binary,folder,rompath,port,seed=None):
+def emulator(binary,folder,rompath,port,seed=None,driver="gw_kh5",io_trace=None):
  folder.mkdir(parents=True,exist_ok=False);api=API(port)
  try:api.call('info')
  except OSError:pass
  else:raise ValueError('Debugger port already in use')
  nv=folder/'nvram';nv.mkdir()
- if seed:shutil.copyfile(seed,nv/'gw_kh5.nv')
+ if seed:shutil.copyfile(seed,nv/(driver+'.nv'))
  command=[str(binary),'-headless','-startpaused','-httpport',str(port),'-nosound','-fakesound','-nocheat','-skip_disclaimer','-skip_gameinfo','-skip_gamewarnings','-rtc','2026-11-08 12:00:00','-rompath',str(rompath)]
  for option,name in [('nvram','nvram'),('cfg','cfg'),('memcard','mem'),('input','inp'),('hiscore','hi'),('state','sta'),('snapshot','snap'),('diff','diff')]:
   directory=folder/name;directory.mkdir(exist_ok=True);command+=['-'+option+'_directory',str(directory)]
- command+=['gw_kh5'];env=dict(os.environ,PINMAME_WORK_HOME=str(folder),GETAWAY_TEST_ENABLE='1',GETAWAY_IO_TRACE=str(folder/'PRIVATE-coils.jsonl'))
+ command+=[driver];api.command=command;env=dict(os.environ,PINMAME_WORK_HOME=str(folder),GETAWAY_TEST_ENABLE='1',GETAWAY_IO_TRACE=str(io_trace or folder/'PRIVATE-coils.jsonl'))
  with (folder/'PRIVATE-emulator.log').open('w') as log:
   proc=subprocess.Popen(command,env=env,stdout=log,stderr=subprocess.STDOUT)
   try:
    deadline=time.monotonic()+30
    while True:
     try:
-     if api.call('info')['game']!='gw_kh5':raise ValueError('Wrong game on port')
+     if api.call('info')['game']!=driver:raise ValueError('Wrong game on port')
      break
     except OSError:
      if proc.poll() is not None or time.monotonic()>deadline:raise RuntimeError('Emulator did not start; inspect PRIVATE-emulator.log')

@@ -1,0 +1,5291 @@
+[
+  {
+    "frames": 600
+  },
+  {
+    "frames": 600
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "100",
+      "val": 1
+    }
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/buttons",
+    "params": {}
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "100",
+      "val": 0
+    }
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 4
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 8
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "20",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 1
+    }
+  },
+  {
+    "frames": 6
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "40",
+      "val": 0
+    }
+  },
+  {
+    "frames": 60
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "80",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 1
+    }
+  },
+  {
+    "frames": 12
+  },
+  {
+    "path": "/api/input/button",
+    "params": {
+      "mask": "10",
+      "val": 0
+    }
+  },
+  {
+    "frames": 120
+  },
+  {
+    "assert_memory": {
+      "addr": "1B1F",
+      "data": [
+        0,
+        5
+      ]
+    }
+  },
+  {
+    "assert_memory": {
+      "addr": "1B39",
+      "data": [
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "assert_memory": {
+      "addr": "1B9D",
+      "data": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "assert_memory": {
+      "addr": "1BCB",
+      "data": [
+        0,
+        99
+      ]
+    }
+  },
+  {
+    "assert_memory": {
+      "addr": "1BD5",
+      "data": [
+        0,
+        99
+      ]
+    }
+  }
+]

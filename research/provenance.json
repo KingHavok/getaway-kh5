@@ -1,0 +1,401 @@
+{
+  "controllers": [
+    {
+      "module": "readiness_games",
+      "original_authored_source_sha256": "73e62bc18e1cdf0b4f64ca2813af42fff41bf5990a2d4bfcf07b59f7a984cb6f",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "4ae6bb48bea5b869c5175cb93d58b9f8e3bf8220bf489661df0f7f8c5afcdcb4"
+    },
+    {
+      "module": "readiness_session",
+      "original_authored_source_sha256": "d3176e4baf7231e794d6b91b73ae6fd0869feaf891c44516652b222fc876866b",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "f37494f5229f8a4cdd4921d3563a51cb26a83b85c64eb082db047c29aec49113"
+    },
+    {
+      "module": "readiness_multiplayer",
+      "original_authored_source_sha256": "84e5a1284846cfa5f15326d78b73d92b6778ee581f3067117d136c4d3c5b2f3d",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "fb80a98d24428aa16d41469f76b5141a8c04b1800b07d2eb0875a29c2b9d5d56"
+    },
+    {
+      "module": "readiness_shared_matrix",
+      "original_authored_source_sha256": "a9881319d29abc06cbc9d63d62402691dfa4325977a34cf32909f3a195c9da84",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "f8982c40187107339f8e03d02c3901d55d16424f6507f2122fbc8f8297d76c47"
+    },
+    {
+      "module": "readiness_pairwise",
+      "original_authored_source_sha256": "91c6d6658f94cd43069d22d3e83308ea6b28a616f19917f45b89586439913872",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "147630a9329c152aab148c9c73ced8a60f68dff352650cbaea0cdf9afeef8cf9"
+    },
+    {
+      "module": "readiness_sc_countdown",
+      "original_authored_source_sha256": "1b4357aaa856d14484e76b4162748700f471d1c4f67e6206eace79032c08bef3",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "c8fb4574ec00f16ac157d3ea740729fe6ef46cdc5db0c8aed1add69400783d0f"
+    },
+    {
+      "module": "readiness_getaway_countdown",
+      "original_authored_source_sha256": "50187d25dd07f2e55dee20b9a8c2ab3dc1a7e54f863c074286693e356ffdef71",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "79253cd5fe675e8610987632164e4a2524fee18276edb60a17702c0894badf48"
+    },
+    {
+      "module": "readiness_recovery",
+      "original_authored_source_sha256": "24cbf7c85af6a2a0e3565bcdbe56cd81471ebe3dc62f209bff1f93e49400b991",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "22c6cb0aeb47ab51874c7a17ef421d9c2ef75e1ade781c2224d0991d2267b53e"
+    },
+    {
+      "module": "fault_campaign_v3",
+      "original_authored_source_sha256": "63834816ae5653a97c7899eb1e55739ea4b3f5cb1dd2c408d02d4f6c0572883b",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "929e4d4936c39ef6679be0e5d25d6adf2f5cd8e1aafc22f0b8108e7ba4650ad0"
+    },
+    {
+      "module": "pilot_donut_trap",
+      "original_authored_source_sha256": "c0aaa2957190d3bbe1968ebe1da72bcde0dd91ec4c0a912acca8bd74eded72e9",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "061316a83b9db71874a32dbd242d5298faf30c12ce3e20ee6e832f9ea35e9aea"
+    },
+    {
+      "module": "pilot_burn_rubber",
+      "original_authored_source_sha256": "78a5ec5d3a51f08a01ea56664602a09687adcd8dffc28f3d8e2e0e84edbaae31",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "ba628518e5d0970f06bfacaaede688a188ca47b5270f3fe3f9d896280a63b2cf"
+    },
+    {
+      "module": "donut_ramp_tests",
+      "original_authored_source_sha256": "23ab03c6e7c1f5a0d7ef93397aec4ef3a7a2834767478ecf083b5c56bfa609be",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "b7c7f7a1b4121b71761f11ad3e7bdd16d6204d603472cafe56f6e2fb596fe757"
+    },
+    {
+      "module": "donut_ramp_endurance",
+      "original_authored_source_sha256": "baac2096798a21c8c475a531793c0bb6147be1b7b6f24193eaaf355dd2ff2869",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "9ae22132bd6cabc0e8c5af7574963423f51d300c71da4e949f014b1841681a7c"
+    },
+    {
+      "module": "flipper_fault_tests_v2",
+      "original_authored_source_sha256": "acd41a7e167b79a68a181a81cb6e7af8c81ff9b7432bcc788acc715ffb2853b8",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "324fefdd69f692e87867a424343d44ebd035458b1bd4d98a7fb1ebb0c0df0b50"
+    },
+    {
+      "module": "coil_endurance_tests_v2",
+      "original_authored_source_sha256": "d92a3c046c3cc38f7a21daf31a9117219118b30ad42a5d86b56c5162a6ccb51b",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "5aac87d05cc89f91053ca142c1013bea8ac7a073602ec6e8318cb77980d8958b"
+    },
+    {
+      "module": "remaining_multiball_matrix_v4",
+      "original_authored_source_sha256": "1ec790f207dfe4020ab055b062cfe40337b9d2685788304ba60f999a10550b72",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "cbb3604ad71c9e51779eac87f68e270990dbcd9577983cdf52bcdf4490fc7eb0"
+    },
+    {
+      "module": "active_multiball_traps",
+      "original_authored_source_sha256": "d94f86e2d45f91c0970a5fbe3a79d63127ae83bcd6fbaab13b263c5a97de9b43",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "9b0fb68063c4133ac60f4446983a3931bd83aef7932321265c8f0bc5f44cf9c1"
+    },
+    {
+      "module": "analyze_coil_trace",
+      "original_authored_source_sha256": "1b0df7784cf9fd70fe3303a95b355de6e637f5c550ee39ccbff6d3f576227f2b",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "8a533eb64205b4296610f79b7b20066ad176cbffe5eb5b436cac571b5d951ddd"
+    },
+    {
+      "module": "b6_reproduce_v5",
+      "original_authored_source_sha256": "fbd7aac0e07eff96831027cb327d7d3b5e6c91434cbb2b003701dee6a9f80e66",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "fd2c7ceb538e0d589d1c8880bf12a2e373e2a903d20038b7ef6930af4152376a"
+    },
+    {
+      "module": "b6_reproduce_v7",
+      "original_authored_source_sha256": "c24b848b42f4575b03c6f89485a8ba204c5bbd6862faf404ede75a8402df4d9e",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "55f4d3955cc30d6cf0878b5da9cd076f33c68e6732336ecfa697bb5f5cfbec52"
+    },
+    {
+      "module": "release_g6_lab_v2",
+      "original_authored_source_sha256": "60ad03cf5b783fb6f02eb2624bb04cbf1d6b2396e9e3698a5f5af0c29fda72d3",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "6f58753d11e51a813b33709ab848a0bfd96701d167710f0465398428af040b23"
+    },
+    {
+      "module": "release_g6_mixed_v2",
+      "original_authored_source_sha256": "5dc609526c01f4f344272b44bdd760c4fe11312b07f894732457649442d21c06",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "c7f03b45909f6e8d79c93fef1c869b4be7aa826699e1990a58b71762c680fbe6"
+    },
+    {
+      "module": "release_g6_awards_v3",
+      "original_authored_source_sha256": "b5a03259e2fcc65f684bd7bb134a4c3eb0159ca75abb85d014a9f0a4ee54d098",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "74a65a64e0b27220e00ebf0e37996a9f70eb21809c203521039f824e7db3f94e"
+    },
+    {
+      "module": "release_g6_special_v1",
+      "original_authored_source_sha256": "3db15adf360c500c556dd10fcc90bd9ac3dbe673af8619a004f5b5c84cdeec10",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "f8405f3c40a9fd6917b9779a5ae19856fe4bd5cb240d1477e575c68c00acdac2"
+    },
+    {
+      "module": "release_g6_casual_v1",
+      "original_authored_source_sha256": "945ec779ede6d6010734c3a86d70d16079dd4ba963ce8f37298f35e628ca808f",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "a134391686116640bd1cb9a6acd27d150a1afcc09bb0d1f2a411777f06d9cdd7"
+    },
+    {
+      "module": "release_g6_video_v11",
+      "original_authored_source_sha256": "3c83915f6e68dc528c1cf66dad512b08b36b3b9d3650fab3a65c487d1f0aa438",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "317868e1cf360704b988f0443411cebf8615a2ba504074ed6c140ea25a12dd09"
+    },
+    {
+      "module": "release_g6_video_v12",
+      "original_authored_source_sha256": "be7e161759364bdae30f4013a223e213b093ee73d30de7f0d42681614e6e79a8",
+      "export": "Function/class/constant source only; private launchers and main entry removed; owner-local/runtime adapters",
+      "published_source_sha256": "0febe5baeb79e54986f4f4df90ee5cfc8e4ab4d82665e31c557c6e5ef7f44cc7"
+    }
+  ],
+  "inputs": [
+    {
+      "file": "research/inputs/g5sm_success_launched.json",
+      "input_source_sha256": "6a9a5ab16392f57bfb97a9cd4b6c21c760d6ddc756aea4622a2f6dfc3950b608",
+      "non_numeric_or_ROM_assertions_replaced_by_observation": []
+    }
+  ],
+  "scope": "Authored test/controller source; no private ROMs, NVRAM, original driver signatures, assets or captures",
+  "additional_ports": [
+    {
+      "published_file": "lab/extensions.py",
+      "source_sha256": "4d3c3519a9dd5a95702e5626e48982bc26328cf2c50dff75460ee632a9f9df59",
+      "adaptation": "Owned regular-MB grace follow-up; old file/queue coordination removed"
+    },
+    {
+      "published_file": "lab/extensions.py",
+      "source_sha256": "1a614cdaaa480ff5a7ea0ef168fd119d9f396ac8355eca00b72ec134be549ffa",
+      "adaptation": "Owned entry-sensor stimulus and repaired model lift; queue removed"
+    },
+    {
+      "published_file": "lab/extensions.py",
+      "source_sha256": "be6f2c907c6fdb19e462f734fa2d7f75591bd91e70cdc4a4f6f719c997629f82",
+      "adaptation": "Same shared-lock controller with explicit tournament-off override; serial scoped patch"
+    },
+    {
+      "published_file": "lab/replay_awards.py",
+      "source_sha256": "c6631bf637f1168164c8c37cfc289e3521b0d6f9eed55b2d52a4d6a831f7e78c",
+      "adaptation": "Matched replay-threshold input design; owner-local generic session and numeric award assertion"
+    },
+    {
+      "published_file": "lab/pwm.py",
+      "source_sha256": "762408287cd1135a25b52b065eba711fe54ac5316f5f8222f7a39f67963cec4a",
+      "adaptation": "Authored 8192-vector CPU fixture with corrected 0FF0 stack and explicit NEVER_BURN scope"
+    },
+    {
+      "published_file": "research/campaign_contracts.py",
+      "source_sha256": "5dd16a71a844ee23ffe82c060d6e85abc801f79aa84507e5b3e9abbf26dcea2d",
+      "adaptation": "Independent contracts adapted to explicit declared image/runtime and portable owner-state shapes"
+    },
+    {
+      "published_file": "lab/variants.py",
+      "source_sha256": "659ee94ccfe299b70237b4370780d58bdb93c7b5a508940418586dca3ea47e16",
+      "adaptation": "Published stimulus design and independent scalar/semantic checks; see variant-inputs.json"
+    },
+    {
+      "published_file": "research/release_contracts.py",
+      "source_sha256": "cf0d49e9d212532d0cb588d0add6550847f12f2194f691bc890764eb0e81e3a7",
+      "adaptation": "Independent native mode/award/progression contracts with portable filenames"
+    },
+    {
+      "published_file": "lab/calibration.py",
+      "source_sha256": "123cee698a2abc43459b0143be76a2d4d6128440138f197b984d83087caea5a7",
+      "adaptation": "Known-cycle waveform generator; corrected unused stack location"
+    },
+    {
+      "published_file": "lab/calibration.py",
+      "source_sha256": "8d4fe7af1dbcd9595a76893756f469e1bf6f55be85bf09146abb63e6f9c72242",
+      "adaptation": "CPU-visible ordinary/inverted/flipper sensor and pulse checks"
+    }
+  ],
+  "published_python_sha256": {
+    "lab/__init__.py": "41adb2d8408ea65083b3e12a2d2912d3756afb1f98b485aafaec6cf5059b2d47",
+    "lab/api.py": "3c6d866c25593708b57582594efb53af25b51f72bdffaab7f4e5c711a43dd820",
+    "lab/build.py": "0e153e8cabfe740b09431ec8aa3ab4ea0dd499529e6e69ab8ab40840e6745312",
+    "lab/calibration.py": "0ec7b30d93fcaa5c594167295268f58d519169c9cc85ae45131de35fbc0de56a",
+    "lab/campaign.py": "dc19b7a26ea009b3d711bd6a23ac5729fe36524f91807f3c374760c89185cfcb",
+    "lab/compare.py": "ae74fc9dc65c962d2eb459831a629b7beffa820c408344a17f7fe41819064e30",
+    "lab/config.py": "26d9156a57c5bf8e763f48bce0c72aa09d11f9a85ae6b4087061d98e91150f3b",
+    "lab/dispatch.py": "28dab73df28aa056b632a43a0853ee14da45b016a5ee2ae782f8ebdc6ca6e5e1",
+    "lab/driver.py": "5a9d84aa40832a5b95f1c960b33e51b06b7b6d27cee4e83940aaa6377fa1e1fc",
+    "lab/extensions.py": "ce4621eb5b5c30ace04da7a45b66306b0b18921ea28f71dcc5a9fd8a99efae95",
+    "lab/ledger.py": "c036f7ef227df1a6a57875c391b4ce31245169312d2b31648a18cde839d08d6a",
+    "lab/locking.py": "cd5c8f3bf923a95e24da31fafc6d9094e800a457ebef71d07470868d8828cd6e",
+    "lab/native.py": "be7d065a8dcf97da49a85cfc540e4ba51ad506a2e5b53ee28e5d14d4883e5562",
+    "lab/pwm.py": "ed63b16e66b4d3c3841bc13c163b42ce985a9835d8ae5f0c110ac03a4daa3d78",
+    "lab/replay.py": "7d1f48c961fb43965ace18f86bda57b158d3146da0a7f186805c9f70a203d543",
+    "lab/replay_awards.py": "9040af6ffba3351e0e893626a9aada92c5c2271570b966553caab545290649e3",
+    "lab/runtime.py": "6ea4c1a5fb7aadcf2c5903a0d41ba051a5ba288ba464719a52fdf58f7b9a73cd",
+    "lab/variants.py": "1fa8921c4654a6b40ce06294fe67db05880f0c6b41f1e04d9f912c53babdbe1d",
+    "lab/visual.py": "9a80ddf2d2e0936925152411a0fa54123da367bcfd91e6103c46ff7fb88915ab",
+    "research/active_multiball_traps.py": "9b0fb68063c4133ac60f4446983a3931bd83aef7932321265c8f0bc5f44cf9c1",
+    "research/analyze_coil_trace.py": "8a533eb64205b4296610f79b7b20066ad176cbffe5eb5b436cac571b5d951ddd",
+    "research/b6_reproduce_v5.py": "fd2c7ceb538e0d589d1c8880bf12a2e373e2a903d20038b7ef6930af4152376a",
+    "research/b6_reproduce_v7.py": "55f4d3955cc30d6cf0878b5da9cd076f33c68e6732336ecfa697bb5f5cfbec52",
+    "research/campaign_contracts.py": "db92b707357e6ebedf3d46249c4f8b014ce648b9e78079b773d5d1257a5c2c21",
+    "research/coil_endurance_tests_v2.py": "5aac87d05cc89f91053ca142c1013bea8ac7a073602ec6e8318cb77980d8958b",
+    "research/donut_ramp_endurance.py": "9ae22132bd6cabc0e8c5af7574963423f51d300c71da4e949f014b1841681a7c",
+    "research/donut_ramp_tests.py": "b7c7f7a1b4121b71761f11ad3e7bdd16d6204d603472cafe56f6e2fb596fe757",
+    "research/fault_campaign_v3.py": "929e4d4936c39ef6679be0e5d25d6adf2f5cd8e1aafc22f0b8108e7ba4650ad0",
+    "research/fault_lab.py": "55fe69edf9ecd5a26e19a751b49759128d68e5239e1f1125f89bd5c7a298ea20",
+    "research/fault_lab_candidate.py": "55fe69edf9ecd5a26e19a751b49759128d68e5239e1f1125f89bd5c7a298ea20",
+    "research/fault_lab_candidate_sound.py": "55fe69edf9ecd5a26e19a751b49759128d68e5239e1f1125f89bd5c7a298ea20",
+    "research/fault_lab_flippers.py": "55fe69edf9ecd5a26e19a751b49759128d68e5239e1f1125f89bd5c7a298ea20",
+    "research/flipper_fault_tests_v2.py": "324fefdd69f692e87867a424343d44ebd035458b1bd4d98a7fb1ebb0c0df0b50",
+    "research/pilot_burn_rubber.py": "ba628518e5d0970f06bfacaaede688a188ca47b5270f3fe3f9d896280a63b2cf",
+    "research/pilot_donut_trap.py": "061316a83b9db71874a32dbd242d5298faf30c12ce3e20ee6e832f9ea35e9aea",
+    "research/readiness_games.py": "4ae6bb48bea5b869c5175cb93d58b9f8e3bf8220bf489661df0f7f8c5afcdcb4",
+    "research/readiness_getaway_countdown.py": "79253cd5fe675e8610987632164e4a2524fee18276edb60a17702c0894badf48",
+    "research/readiness_multiplayer.py": "fb80a98d24428aa16d41469f76b5141a8c04b1800b07d2eb0875a29c2b9d5d56",
+    "research/readiness_pairwise.py": "147630a9329c152aab148c9c73ced8a60f68dff352650cbaea0cdf9afeef8cf9",
+    "research/readiness_recovery.py": "22c6cb0aeb47ab51874c7a17ef421d9c2ef75e1ade781c2224d0991d2267b53e",
+    "research/readiness_sc_countdown.py": "c8fb4574ec00f16ac157d3ea740729fe6ef46cdc5db0c8aed1add69400783d0f",
+    "research/readiness_session.py": "f37494f5229f8a4cdd4921d3563a51cb26a83b85c64eb082db047c29aec49113",
+    "research/readiness_shared_matrix.py": "f8982c40187107339f8e03d02c3901d55d16424f6507f2122fbc8f8297d76c47",
+    "research/release_contracts.py": "41dbe56222ed5d36df4944c343f2b173606bcc68a48fd8c6840b2976deb49228",
+    "research/release_g6_awards_v3.py": "74a65a64e0b27220e00ebf0e37996a9f70eb21809c203521039f824e7db3f94e",
+    "research/release_g6_casual_v1.py": "a134391686116640bd1cb9a6acd27d150a1afcc09bb0d1f2a411777f06d9cdd7",
+    "research/release_g6_lab_v2.py": "6f58753d11e51a813b33709ab848a0bfd96701d167710f0465398428af040b23",
+    "research/release_g6_mixed_v2.py": "c7f03b45909f6e8d79c93fef1c869b4be7aa826699e1990a58b71762c680fbe6",
+    "research/release_g6_special_v1.py": "f8405f3c40a9fd6917b9779a5ae19856fe4bd5cb240d1477e575c68c00acdac2",
+    "research/release_g6_video_v11.py": "317868e1cf360704b988f0443411cebf8615a2ba504074ed6c140ea25a12dd09",
+    "research/release_g6_video_v12.py": "0febe5baeb79e54986f4f4df90ee5cfc8e4ab4d82665e31c557c6e5ef7f44cc7",
+    "research/remaining_multiball_matrix_v4.py": "cbb3604ad71c9e51779eac87f68e270990dbcd9577983cdf52bcdf4490fc7eb0"
+  },
+  "limitations": [
+    "Current retained controller versions and stimulus designs are published; superseded private build/audit/queue scripts are not an archival export",
+    "Source ports and generated cases are not newly completed passes; see docs/port-validation.md",
+    "No native code, artwork, sound, NVRAM, RAM dump or private path is an input dependency"
+  ],
+  "final_whitespace_normalization": [
+    {
+      "file": "lab/campaign.py",
+      "before_sha256": "a1108c29d4376f52cc010ee21791a603909f75ab100d66ca647b70ce5c9a1e45",
+      "after_sha256": "dc19b7a26ea009b3d711bd6a23ac5729fe36524f91807f3c374760c89185cfcb",
+      "ast_equal": true
+    },
+    {
+      "file": "research/active_multiball_traps.py",
+      "before_sha256": "fed8b3eb0ed8922e4166bbe8a39c35f765c6ada5a916514e4ff010e6527cddd1",
+      "after_sha256": "9b0fb68063c4133ac60f4446983a3931bd83aef7932321265c8f0bc5f44cf9c1",
+      "ast_equal": true
+    },
+    {
+      "file": "research/analyze_coil_trace.py",
+      "before_sha256": "521aeda699937fffb85657345a929bde260d139c845996c014d05fc3325c97c9",
+      "after_sha256": "8a533eb64205b4296610f79b7b20066ad176cbffe5eb5b436cac571b5d951ddd",
+      "ast_equal": true
+    },
+    {
+      "file": "research/b6_reproduce_v5.py",
+      "before_sha256": "ac1488bf728e95a520ff9741f5f64e036fb845e87a2196b5cf58c29b148f4829",
+      "after_sha256": "fd2c7ceb538e0d589d1c8880bf12a2e373e2a903d20038b7ef6930af4152376a",
+      "ast_equal": true
+    },
+    {
+      "file": "research/b6_reproduce_v7.py",
+      "before_sha256": "ddc1a37a538b9a6e105ec8d01a34b6e6089bd51e991574e7a44358f1e4f2df1a",
+      "after_sha256": "55f4d3955cc30d6cf0878b5da9cd076f33c68e6732336ecfa697bb5f5cfbec52",
+      "ast_equal": true
+    },
+    {
+      "file": "research/coil_endurance_tests_v2.py",
+      "before_sha256": "47236bb2761391ebe7ccfc08ef28a9edb76865ab73c7cc5c5c5fc3b75064c2c3",
+      "after_sha256": "5aac87d05cc89f91053ca142c1013bea8ac7a073602ec6e8318cb77980d8958b",
+      "ast_equal": true
+    },
+    {
+      "file": "research/donut_ramp_endurance.py",
+      "before_sha256": "af1d2bdd17f97996e8eed0debb9cd9682c7cc6810fa39e405b4da5346608103c",
+      "after_sha256": "9ae22132bd6cabc0e8c5af7574963423f51d300c71da4e949f014b1841681a7c",
+      "ast_equal": true
+    },
+    {
+      "file": "research/donut_ramp_tests.py",
+      "before_sha256": "b09b3f77170518f6185bcbc449c718baee2a252a6547613e2f269e73068448d1",
+      "after_sha256": "b7c7f7a1b4121b71761f11ad3e7bdd16d6204d603472cafe56f6e2fb596fe757",
+      "ast_equal": true
+    },
+    {
+      "file": "research/fault_campaign_v3.py",
+      "before_sha256": "3204d2aaeda218ff5deaa4b15db87ed6486556f7154356eb7e202b3d30c6dd03",
+      "after_sha256": "929e4d4936c39ef6679be0e5d25d6adf2f5cd8e1aafc22f0b8108e7ba4650ad0",
+      "ast_equal": true
+    },
+    {
+      "file": "research/flipper_fault_tests_v2.py",
+      "before_sha256": "568ff330dbc10f585677c4506736170e53f78e6883f643effa68c7920aeec052",
+      "after_sha256": "324fefdd69f692e87867a424343d44ebd035458b1bd4d98a7fb1ebb0c0df0b50",
+      "ast_equal": true
+    },
+    {
+      "file": "research/pilot_burn_rubber.py",
+      "before_sha256": "c462ccc05290a4e108a7b007a45c53391fd80564bf5269f7c84a2bc8c5d47323",
+      "after_sha256": "ba628518e5d0970f06bfacaaede688a188ca47b5270f3fe3f9d896280a63b2cf",
+      "ast_equal": true
+    },
+    {
+      "file": "research/pilot_donut_trap.py",
+      "before_sha256": "13d63d3478ff7ae342e0fa705a615c8a0a01c2997a9105cb9b66ddc9da2a451c",
+      "after_sha256": "061316a83b9db71874a32dbd242d5298faf30c12ce3e20ee6e832f9ea35e9aea",
+      "ast_equal": true
+    },
+    {
+      "file": "research/readiness_getaway_countdown.py",
+      "before_sha256": "0655d50667c9454f20cdcf532cbf89c425de6c58cd68693e5a490b6f4e225960",
+      "after_sha256": "79253cd5fe675e8610987632164e4a2524fee18276edb60a17702c0894badf48",
+      "ast_equal": true
+    },
+    {
+      "file": "research/readiness_pairwise.py",
+      "before_sha256": "35c7cd5b793d1a9bfba5e554e49107823896b02bf51eb562e6653db35225b474",
+      "after_sha256": "147630a9329c152aab148c9c73ced8a60f68dff352650cbaea0cdf9afeef8cf9",
+      "ast_equal": true
+    },
+    {
+      "file": "research/readiness_recovery.py",
+      "before_sha256": "6920628db96981a9a9de1219e8174cf60d48a11063fc60d26d20add4aa32f263",
+      "after_sha256": "22c6cb0aeb47ab51874c7a17ef421d9c2ef75e1ade781c2224d0991d2267b53e",
+      "ast_equal": true
+    },
+    {
+      "file": "research/readiness_sc_countdown.py",
+      "before_sha256": "28503dcee23c2c38ef6dcf13328e2161bfbd2efbb52737e083475d4fcae4ac67",
+      "after_sha256": "c8fb4574ec00f16ac157d3ea740729fe6ef46cdc5db0c8aed1add69400783d0f",
+      "ast_equal": true
+    },
+    {
+      "file": "research/readiness_shared_matrix.py",
+      "before_sha256": "bf88ec21e391f3ab2bd4bbcc30c575889ce3264f7e82282277564ebc278dc038",
+      "after_sha256": "f8982c40187107339f8e03d02c3901d55d16424f6507f2122fbc8f8297d76c47",
+      "ast_equal": true
+    },
+    {
+      "file": "research/release_g6_lab_v2.py",
+      "before_sha256": "103af54be0bde518e6cf91448341538a66fcc6207b67e3ac2c7cad80eeab6706",
+      "after_sha256": "6f58753d11e51a813b33709ab848a0bfd96701d167710f0465398428af040b23",
+      "ast_equal": true
+    },
+    {
+      "file": "research/remaining_multiball_matrix_v4.py",
+      "before_sha256": "bb9620cde7ba75969157e401c7dbb871960ed8bfba175228b79e3c5beccc274a",
+      "after_sha256": "cbb3604ad71c9e51779eac87f68e270990dbcd9577983cdf52bcdf4490fc7eb0",
+      "ast_equal": true
+    }
+  ]
+}

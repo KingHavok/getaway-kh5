@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build the pinned source-only research emulator. Never downloads a game ROM."""
-import argparse,pathlib,subprocess,shutil,sys
+import argparse,pathlib,subprocess,shutil,sys,json,hashlib
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 PIN='47ac466023e488e1cbeb19448fa3f56ff9cc8788'
 def run(*args,cwd=None):subprocess.run(list(args),cwd=cwd,check=True)
@@ -20,6 +20,7 @@ def main():
  (source/'CMakeLists.txt').write_text(cmake)
  ui=(source/'src/remote_debug/ui.html').read_bytes()
  (source/'src/remote_debug/ui_html.h').write_text('unsigned char src_remote_debug_ui_html[] = {'+','.join(map(str,ui))+'};\nunsigned int src_remote_debug_ui_html_len = '+str(len(ui))+';\n')
+ (source/'.getaway-lab-source.json').write_text(json.dumps(dict(pin=PIN,patch_sha256=hashlib.sha256((ROOT/'tools/pinmame-instrumentation.patch').read_bytes()).hexdigest()),indent=2)+'\n')
  if a.prepare_only:return
  platform='macos' if sys.platform=='darwin' else 'linux';build=source/'build'
  run('cmake','-S',str(source),'-B',str(build),'-DPLATFORM='+platform,'-DARCH=x64','-DCMAKE_BUILD_TYPE=RelWithDebInfo','-DSDL3PINMAME_SYSTEM_SDL=ON','-DSDL3PINMAME_MAME_DEBUG=ON','-DPINMAME_JIT_ASMJIT=OFF','-DPINMAME_P2K=OFF','-DPINMAME_SPIKE1=OFF')

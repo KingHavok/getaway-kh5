@@ -1,5 +1,10 @@
 # Contributions
 
+Start with the [developer handoff](docs/developer-handoff.md),
+[runnable test catalogue](docs/test-catalogue.md) and [technical map](docs/technical-map.md).
+Use `tools/lab.py build-candidate` for new identities, then test them explicitly;
+leave the qualified release pins intact.
+
 Keep ROMs, captures, disassembly, original-byte logs, NVRAM and opaque debugger
 payloads private. A PR may include original patch source, deterministic test
 inputs, scalar results, hashes and a new cause/reproduction explanation.

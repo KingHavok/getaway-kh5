@@ -48,14 +48,22 @@ def apply_ips(base,patch):
         if occupied&addresses:raise ValueError('Overlapping IPS records')
         occupied|=addresses;out[offset:offset+count]=data
 
-def gameplay_build(base):
-    spec=json.loads((ROOT/'patches/edits.json').read_text());out=bytearray(base);regions=[]
+def gameplay_build(base,patch_dir=None):
+    directory=Path(patch_dir) if patch_dir is not None else ROOT/'patches'
+    spec=json.loads((directory/'edits.json').read_text());out=bytearray(base);regions=[]
+    occupied=set()
+    def reserve(off,data,name):
+        if off<0 or not data or off+len(data)>len(out):raise ValueError('Source region out of range: '+name)
+        addresses=set(range(off,off+len(data)))
+        if occupied&addresses:raise ValueError('Overlapping source regions: '+name)
+        occupied.update(addresses)
     for edit in spec['edits']:
         off=int(edit['offset'],16);data=bytes.fromhex(edit['after'])
-        if off+len(data)>len(out):raise ValueError('Source edit out of range')
+        reserve(off,data,edit['id'])
         out[off:off+len(data)]=data;regions.append((off,off+len(data),edit['id']))
-    segments,_=assemble(ROOT/'patches/kh5.asm')
+    segments,_=assemble(directory/'kh5.asm')
     for off,data in segments:
+        reserve(off,data,'ASM')
         if base[off:off+len(data)]!=b'\xff'*len(data):raise ValueError('Patch code is not in baseline FF fill')
         out[off:off+len(data)]=data;regions.append((off,off+len(data),'ASM'))
     return bytes(out),regions
