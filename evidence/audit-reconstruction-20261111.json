@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-11",
+  "kind": "Post-hoc reconstruction of publication audit; not restoration of the overwritten contemporaneous file",
+  "result": "PASS",
+  "snapshot": {
+    "commit": "54db0704b8a435b9d62d838626e020c78f48c09e",
+    "source": "Exact committed public tree immediately before the developer-handoff changes",
+    "commit_url": "https://github.com/KingHavok/getaway-kh5/commit/54db0704b8a435b9d62d838626e020c78f48c09e"
+  },
+  "method": {
+    "audit_algorithm_sha256": "5954577619b87c68a5aeffd98390fd101758364d26187da1350dea824fdae052",
+    "algorithm": "Retained original owner-local publication audit",
+    "reference_inputs": "Unchanged owner-local official L5, KH5, G6 predecessor and U18; no reference bytes published",
+    "only_adaptations": [
+      "Public tree points to extracted Git snapshot",
+      "Output points to a new recovery directory"
+    ]
+  },
+  "historical_comparison": {
+    "record": "evidence/summary.json",
+    "commit": "54db0704b8a435b9d62d838626e020c78f48c09e",
+    "section": "publication_payload_audit",
+    "fields_compared": 11,
+    "all_fields_match": true
+  },
+  "reconstructed_findings": {
+    "result": "PASS",
+    "input_identity": {
+      "bytes": 524288,
+      "crc32": "b97f3d62",
+      "sha1": "c87c36a2327561c50b37d587d3bd0782acf8860d",
+      "sha256": "c9015339fb0312eb84a580cc4f32de41b70c78931fad2cda515a28c6d4d0f0ac",
+      "wpc_checksum": "4905"
+    },
+    "target_identity": {
+      "bytes": 524288,
+      "crc32": "b9ba49b9",
+      "sha1": "7d65af17fb6297e7e434a6154f96647493c8460c",
+      "sha256": "e27ce97d13f96510b0a21f0251c314761e66beb417c677f1f1984166fc94bd61",
+      "wpc_checksum": "0F05"
+    },
+    "public_ips_changed_payload_bytes": 116,
+    "relocated_native_led_payload_distributed": false,
+    "led_reconstructed_from_owner_input": true,
+    "unchanged_carrier_bytes": 0,
+    "original_soren_trampoline_distributed": false,
+    "nontrivial_96_byte_game_sound_matches": 0,
+    "public_bytes_scanned": 1517647,
+    "changes_from_g6": 25,
+    "allowed_g6_difference_regions": [
+      "numeric guard slot",
+      "two revision initials",
+      "checksum/correction words"
+    ],
+    "entire_private_rom_assets_or_dumps_included": false,
+    "limits": [
+      "Payload and provenance audit, not a legal determination of third-party rights",
+      "Very short opcode/interface constants can coincide with firmware; added routines are published with their original source"
+    ]
+  },
+  "recovered_or_revalidated": [
+    "Complete L5/KH5 numeric identities and checksums",
+    "All substantive checks encoded by the retained audit algorithm passed on the committed snapshot",
+    "Every one of the 11 previously published audit fields matches",
+    "A reproducible scanned-byte total for this specific committed snapshot"
+  ],
+  "not_recovered": [
+    "Exact bytes of the overwritten original summary file",
+    "Original run scan-size figure and exact working-tree state, which were not retained in the historical public summary"
+  ],
+  "scan_size_scope": "1517647 bytes describes the reconstructed committed snapshot only; it is not claimed to be the overwritten original run total or the size of the current repository",
+  "original_summary_restored": false,
+  "unaffected": [
+    "No original ROM, sound image or raw gameplay test evidence was overwritten",
+    "No switch sequence, CPU trace, coil measurement or DMD capture was stored in the overwritten summary",
+    "KH5 firmware, public patch and qualification identities are unchanged"
+  ],
+  "limitations": [
+    "Reconstruction uses retained inputs and source; it does not recreate the original execution time or contemporaneous file",
+    "This is a publication-payload audit, not a new gameplay test run or physical hardware qualification",
+    "Only numeric findings, hashes and original explanatory prose are published; raw inputs and captures remain private"
+  ]
+}

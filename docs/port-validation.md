@@ -73,8 +73,28 @@ B6 remains closed as inferred expected Getaway/RPM gating. Digital coil commands
 and CPU fixtures do not establish physical mechanism force, current or temperature.
 
 A fixed-output private payload-audit helper reused an older summary filename during
-this work. Its old exact summary bytes were not preserved; the new report was
-retained separately. The historical public audit findings, raw native test evidence
-and ROMs remain intact. The public owner-local audit accepts an explicit output
-path and refuses overwriting an existing report, so future contributors do not
-need that private helper or its fixed destination.
+this work. That file held derived publication checks: ROM identities, patch and
+native-payload checks, permitted G6-to-KH5 differences, PASS status and a scanned-byte
+total. It held no switch sequences, CPU traces, coil measurements or DMD captures.
+The historical public findings, raw native test evidence and ROMs remain intact.
+
+The [reconstructed audit record](../evidence/audit-reconstruction-20261111.json)
+now revalidates those findings against the exact pre-handoff public commit
+[`54db070`](https://github.com/KingHavok/getaway-kh5/commit/54db0704b8a435b9d62d838626e020c78f48c09e).
+The retained original audit algorithm was rerun using the unchanged owner-local
+reference images. Only the scanned-tree location and output destination changed.
+All checks passed, and every one of the 11 audit fields retained in that commit's
+public evidence matches the reconstruction.
+
+The reconstruction scanned **1,517,647 bytes**. This figure belongs specifically
+to that committed snapshot; it is not the original lost run's verified byte total
+or the current repository size. The original summary's exact bytes and its precise
+working-tree state remain unverified. This is a post-hoc reconstruction, not a
+restored contemporaneous record. No gameplay evidence needed to continue testing
+was lost, and this recovery adds no new gameplay qualification claim.
+
+The published record contains numeric findings, hashes and explanatory prose only.
+The private source archive, reference images and raw evidence remain outside the
+repository. KH5 and its patch are unchanged. The public owner-local audit accepts
+an explicit output path and refuses overwriting an existing report, so future
+contributors do not need the old helper or its fixed destination.

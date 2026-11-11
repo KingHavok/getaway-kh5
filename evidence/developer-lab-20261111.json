@@ -749,5 +749,13 @@
     "Published historical G6 outcomes are not relabelled as newly passed KH5 tests; new candidate fixture is not a release or burn image",
     "A4 and separate A10 reports remain unreproduced; B6 classification remains inferred expected behaviour; no physical hardware qualification"
   ],
-  "audit_bookkeeping": "Rerunning a fixed-output private audit helper overwrote an older summary, including its variable public byte count. New report retained separately; old summary exact bytes unavailable. Historical public summaries, raw native evidence and ROMs remain intact. Public owner-local audit now requires an explicit non-overwriting output path when saving a report."
+  "audit_bookkeeping": "A fixed-output private publication audit overwrote an older derived summary. Its exact bytes and original scan-size figure remain unverified. The original audit algorithm has since been rerun against pre-handoff commit 54db0704b8a435b9d62d838626e020c78f48c09e; all checks passed and all 11 retained historical public fields match. Raw native test evidence and ROMs remain intact. The public audit uses an explicit non-overwriting output path.",
+  "audit_reconstruction": {
+    "record": "evidence/audit-reconstruction-20261111.json",
+    "result": "PASS",
+    "snapshot_commit": "54db0704b8a435b9d62d838626e020c78f48c09e",
+    "historical_fields_compared": 11,
+    "all_retained_historical_fields_match": true,
+    "original_summary_restored": false
+  }
 }

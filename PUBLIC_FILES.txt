@@ -26,6 +26,7 @@ docs/sources.md
 docs/technical-map.md
 docs/test-catalogue.md
 docs/testing.md
+evidence/audit-reconstruction-20261111.json
 evidence/developer-lab-20261111.json
 evidence/guard-equivalence.json
 evidence/guard-interrupts.json
